@@ -1,0 +1,4099 @@
+{
+  "breweries": [
+    {
+      "title": "Altenburger Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Altenburg"
+    },
+    {
+      "title": "Ankerbräu Steinach",
+      "bundesland": "Thüringen",
+      "ort": "Steinach"
+    },
+    {
+      "title": "Ausflug- & Ferienhotel Brauner Hirsch Sopienhof",
+      "bundesland": "Thüringen",
+      "ort": "Harztor"
+    },
+    {
+      "title": "Brauerei Apolda",
+      "bundesland": "Thüringen",
+      "ort": "Apolda "
+    },
+    {
+      "title": "Brauerei Eisenach",
+      "bundesland": "Thüringen",
+      "ort": "Eisenach"
+    },
+    {
+      "title": "Brauerei Gessner",
+      "bundesland": "Thüringen",
+      "ort": "Sonneberg"
+    },
+    {
+      "title": "Brauerei Meiningen",
+      "bundesland": "Thüringen",
+      "ort": "Meiningen"
+    },
+    {
+      "title": "Brauerei Neunspringe",
+      "bundesland": "Thüringen",
+      "ort": "Leinefelde-Worbis OT Worbis"
+    },
+    {
+      "title": "Brauerei Nordhausen",
+      "bundesland": "Thüringen",
+      "ort": "Nordhausen"
+    },
+    {
+      "title": "Brauerei Weimar",
+      "bundesland": "Thüringen",
+      "ort": "Weimar-Ehringsdorf "
+    },
+    {
+      "title": "Braugasthof Papiermühle",
+      "bundesland": "Thüringen",
+      "ort": "Jena"
+    },
+    {
+      "title": "Braugold Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Erfurt"
+    },
+    {
+      "title": "Brauhaus Saalfeld",
+      "bundesland": "Thüringen",
+      "ort": "Saalfeld"
+    },
+    {
+      "title": "Duff Beer Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Gotha"
+    },
+    {
+      "title": "Erfurter Brauereigaststätte",
+      "bundesland": "Thüringen",
+      "ort": "Erfurt"
+    },
+    {
+      "title": "Familienbrauerei H. Schmiedeknecht",
+      "bundesland": "Thüringen",
+      "ort": "Herschdorf Thüringen"
+    },
+    {
+      "title": "Felsenkeller Weimar",
+      "bundesland": "Thüringen",
+      "ort": "Weimar"
+    },
+    {
+      "title": "Gasthaus - Brauerei Talschänke",
+      "bundesland": "Thüringen",
+      "ort": "Jena - Wöllnitz "
+    },
+    {
+      "title": "Haus zur Pfauen",
+      "bundesland": "Thüringen",
+      "ort": "Erfurt"
+    },
+    {
+      "title": "Hotelpark Stadtbrauerei Arnstadt",
+      "bundesland": "Thüringen",
+      "ort": "Arnstadt"
+    },
+    {
+      "title": "Köstritzer Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Bad Kös-itz"
+    },
+    {
+      "title": "Michels Eichsfelder Braumanufaktur e.K.",
+      "bundesland": "Thüringen"
+    },
+    {
+      "title": "Mühlhäuser Brauhaus ´Zum Löwen`",
+      "bundesland": "Thüringen",
+      "ort": "MühlhausenThüringen"
+    },
+    {
+      "title": "Pörzbrauerei Rudolstadt",
+      "bundesland": "Thüringen",
+      "ort": "Rudolstadt"
+    },
+    {
+      "title": "Privatbrauerei Metzler",
+      "bundesland": "Thüringen",
+      "ort": "Dingsleben"
+    },
+    {
+      "title": "Rhönbrauerei",
+      "bundesland": "Thüringen",
+      "ort": "Kaltennordheim"
+    },
+    {
+      "title": "Rolschter Brauhaus",
+      "bundesland": "Thüringen",
+      "ort": "Rudolstadt"
+    },
+    {
+      "title": "Rosenbrauerei",
+      "bundesland": "Thüringen",
+      "ort": "Pössneck"
+    },
+    {
+      "title": "Schlossbrauerei Schwarzbach",
+      "bundesland": "Thüringen",
+      "ort": "Schwarzbach"
+    },
+    {
+      "title": "Stutzhäuser Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Luisenthal "
+    },
+    {
+      "title": "Vereinsbrauerei Greiz",
+      "bundesland": "Thüringen",
+      "ort": "GreizThüringen "
+    },
+    {
+      "title": "Waldhaus GbR",
+      "bundesland": "Thüringen",
+      "ort": "Erfurt"
+    },
+    {
+      "title": "Watzdorfer Brauerei",
+      "bundesland": "Thüringen",
+      "ort": "Bad Blankenburg"
+    },
+    {
+      "title": "Weißenseer Ratsbräu",
+      "bundesland": "Thüringen",
+      "ort": "Weißensee "
+    },
+    {
+      "title": "Zum Goldenen Schwan Erfurt",
+      "bundesland": "Thüringen",
+      "ort": "Erfurt"
+    },
+    {
+      "title": "Gröninger Privatbrauerei",
+      "bundesland": "Hamburg",
+      "ort": "Hamburg"
+    },
+    {
+      "title": "Hannen Brauerei",
+      "bundesland": "Hamburg",
+      "ort": "Hamburg"
+    },
+    {
+      "title": "Holsten Brauerei",
+      "bundesland": "Hamburg",
+      "ort": "Hamburg"
+    },
+    {
+      "title": "Ratsherrn Brauerei",
+      "bundesland": "Hamburg",
+      "ort": "Hamburg"
+    },
+    {
+      "title": "Brauerei G A Bruch",
+      "bundesland": "Saarland",
+      "ort": "Saarbrücken"
+    },
+    {
+      "title": "Brauhaus Körprich",
+      "bundesland": "Saarland",
+      "ort": "Nalbach OT Körprich"
+    },
+    {
+      "title": "Gasthausbrauerei Sudhaus",
+      "bundesland": "Saarland",
+      "ort": "Saarbrücken"
+    },
+    {
+      "title": "Grosswald Brauerei",
+      "bundesland": "Saarland",
+      "ort": "Heusweiler"
+    },
+    {
+      "title": "Hochwälder Brauhaus",
+      "bundesland": "Saarland",
+      "ort": "Losheim am See"
+    },
+    {
+      "title": "Homburger Brauhaus",
+      "bundesland": "Saarland",
+      "ort": "Homburg"
+    },
+    {
+      "title": "Karlsberg Brauerei",
+      "bundesland": "Saarland",
+      "ort": "Homburg"
+    },
+    {
+      "title": "Mettlacher Abtei Bräu",
+      "bundesland": "Saarland",
+      "ort": "Mettlach"
+    },
+    {
+      "title": "Schmelzer Brauhaus",
+      "bundesland": "Saarland",
+      "ort": "Schmelz"
+    },
+    {
+      "title": "Stiefel Bräu",
+      "bundesland": "Saarland",
+      "ort": "Saarbrücken"
+    },
+    {
+      "title": "Stumm‘s Brauhaus",
+      "bundesland": "Saarland",
+      "ort": "Neunkirchen"
+    },
+    {
+      "title": "Brauerei Rostock",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Rostock"
+    },
+    {
+      "title": "Brauerei Wismar",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Wismar"
+    },
+    {
+      "title": "Braugasthaus Zum alten Fritz Stralsund",
+      "bundesland": "Mecklenburg-Vorpommern"
+    },
+    {
+      "title": "Brauhaus Müritz & Kegelbahn",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Waren (Müritz)"
+    },
+    {
+      "title": "Darguner Brauerei",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Dargun"
+    },
+    {
+      "title": "EICK Bräu",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Gross Gievitz"
+    },
+    {
+      "title": "Hotel Am Markt & Ueckermünde Brauhaus Stadtkrug",
+      "bundesland": "Mecklenburg-Vorpommern"
+    },
+    {
+      "title": "Lübzer Brauerei",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Lübz"
+    },
+    {
+      "title": "Marlower Brauerei",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Marlow "
+    },
+    {
+      "title": "Ostsee Brauhaus AG Trotzenburg",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Rostock"
+    },
+    {
+      "title": "Störtebeker Brauerei",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "S-alsund"
+    },
+    {
+      "title": "Usedomer Brauhaus",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Seebad Heringsdorf "
+    },
+    {
+      "title": "Vielanker Brauhaus",
+      "bundesland": "Mecklenburg-Vorpommern",
+      "ort": "Vielank"
+    },
+    {
+      "title": "Brauhaus Babben",
+      "bundesland": "Brandenburg",
+      "ort": "Lübbenau"
+    },
+    {
+      "title": "Bräuhaus Kneipe Pur",
+      "bundesland": "Brandenburg",
+      "ort": "Brandenburg a.d. Havel "
+    },
+    {
+      "title": "Braumanufaktur Forsthaus Templin",
+      "bundesland": "Brandenburg",
+      "ort": "Potsdam"
+    },
+    {
+      "title": "Braumanufaktur Marstall Boitzenburg",
+      "bundesland": "Brandenburg"
+    },
+    {
+      "title": "Burgbräuhaus Belzig",
+      "bundesland": "Brandenburg",
+      "ort": "Bad Belzig "
+    },
+    {
+      "title": "Finsterwalder Brauhaus",
+      "bundesland": "Brandenburg",
+      "ort": "Massen"
+    },
+    {
+      "title": "Frankfurter Brauhaus",
+      "bundesland": "Brandenburg",
+      "ort": "Frankfurt Oder"
+    },
+    {
+      "title": "Kavaliershäuser Königs Wusterhausen",
+      "bundesland": "Brandenburg",
+      "ort": "Königs Wusterhausen"
+    },
+    {
+      "title": "Kircher Brauhaus",
+      "bundesland": "Brandenburg",
+      "ort": "Drebkau"
+    },
+    {
+      "title": "Klosterbrauerei Neuzelle",
+      "bundesland": "Brandenburg",
+      "ort": "Neuzelle"
+    },
+    {
+      "title": "Krongut Bornstedt",
+      "bundesland": "Brandenburg",
+      "ort": "Potsdam "
+    },
+    {
+      "title": "LaBieratorium",
+      "bundesland": "Brandenburg",
+      "ort": " Cottbus "
+    },
+    {
+      "title": "Luckenwalder Spezialitäten Brauerei",
+      "bundesland": "Brandenburg",
+      "ort": "Luckenwalde"
+    },
+    {
+      "title": "Meierei Potsdam Brauerei",
+      "bundesland": "Brandenburg",
+      "ort": "Potsdam"
+    },
+    {
+      "title": "Pilgerbier - Vertrieb und Einzelhandel",
+      "bundesland": "Brandenburg",
+      "ort": "Müncheberg"
+    },
+    {
+      "title": "Raik Wiedrich und Schulz GbR",
+      "bundesland": "Brandenburg",
+      "ort": "Rheinsberg"
+    },
+    {
+      "title": "Schlossbrauerei Fürstlich Drehna",
+      "bundesland": "Brandenburg",
+      "ort": "Luckau"
+    },
+    {
+      "title": "Spreewälder Privatbrauerei 1788",
+      "bundesland": "Brandenburg",
+      "ort": "Schlepzig"
+    },
+    {
+      "title": "Uckermärker Brauerei",
+      "bundesland": "Brandenburg",
+      "ort": "Chorin OT Golzow"
+    },
+    {
+      "title": "Bitterfelder Brauerei",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Bitterfeld Wolfen"
+    },
+    {
+      "title": "Brauerei Landsberg",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Landsberg"
+    },
+    {
+      "title": "Brauerei Wippra",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Sangerhausen OT Wippra"
+    },
+    {
+      "title": "Brauhaus Lüdde",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Quedlinburg"
+    },
+    {
+      "title": "Brauhaus Wittenberg",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Lutherstadt Wittenberg "
+    },
+    {
+      "title": "Brauhaus zu Röglitz",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Schkopau OT Röglitz"
+    },
+    {
+      "title": "Brauhaus Zum Alten Dessauer",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Dessau-Rosslau"
+    },
+    {
+      "title": "Colbitzer Heidebrauerei",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Colbitz"
+    },
+    {
+      "title": "Demmert- Bräu",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Neuendorf Altmark"
+    },
+    {
+      "title": "Garley Bier",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Gardelegen"
+    },
+    {
+      "title": "Hallesches Brauhaus",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Halle(Saale)"
+    },
+    {
+      "title": "Hasseröder Brauerei",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Wernigerode"
+    },
+    {
+      "title": "Hotel Villa Heine",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Halberstadt"
+    },
+    {
+      "title": "Köthener Brauerei",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Köthen"
+    },
+    {
+      "title": "Mammut Brauerei Michael Lachmann Vertriebsgesellschaft mbH",
+      "bundesland": "Sachsen-Anhalt"
+    },
+    {
+      "title": "Spezialitätenbrauerei Eckart in Lindhorst",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Lindhorst"
+    },
+    {
+      "title": "Wasserburg zu Gommern",
+      "bundesland": "Sachsen-Anhalt",
+      "ort": "Gommern"
+    },
+    {
+      "title": "Becks Brauerei",
+      "bundesland": "Bremen",
+      "ort": "Bremen"
+    },
+    {
+      "title": "Borgfelder Landhaus Gasthaus-Brauerei",
+      "bundesland": "Bremen",
+      "ort": "Bremen "
+    },
+    {
+      "title": "Haake-Beck Brauerei",
+      "bundesland": "Bremen",
+      "ort": "Bremen"
+    },
+    {
+      "title": "Schüttinger Gasthausbrauerei",
+      "bundesland": "Bremen",
+      "ort": "Bremen"
+    },
+    {
+      "title": "Berliner Bürgerbräu",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Brauhaus Georgbraeu",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "BRAUHAUS in RIXDORF",
+      "bundesland": "Berlin",
+      "ort": "Berlin (Neukölln)"
+    },
+    {
+      "title": "Brauhaus Lemke",
+      "bundesland": "Berlin",
+      "ort": "Berlin-Charlottenburg"
+    },
+    {
+      "title": "Brauhaus Mitte",
+      "bundesland": "Berlin",
+      "ort": "Berlin-Mitte"
+    },
+    {
+      "title": "Brauhaus Spandau",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Brauhaus Südstern",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "BrewBaker Berlin",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Flessa Bräu",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Getränke Zukunft",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Hausbrauerei Eschenbräu",
+      "bundesland": "Berlin",
+      "ort": "Berlin "
+    },
+    {
+      "title": "Hops & Barley Hausbrauerei",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Lindenbräu Berlin",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Rollberg Brauerei",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Schalander Hausbrauerei",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Schankhalle Pfefferberg",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Schlossplatzbrauerei Coepenick",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Schoppe Bräu Berlin",
+      "bundesland": "Berlin",
+      "ort": "Berlin"
+    },
+    {
+      "title": "Schultheiss Brauerei",
+      "bundesland": "Berlin",
+      "ort": "Berlin "
+    },
+    {
+      "title": "ASGAARD Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Schleswig"
+    },
+    {
+      "title": "BRAUBERGER zu Lübeck",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Lübeck"
+    },
+    {
+      "title": "Brauerei Kirschenholz",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Schillsdorf"
+    },
+    {
+      "title": "Brauhaus Eutin",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Eutin"
+    },
+    {
+      "title": "Dithmarscher Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Marne"
+    },
+    {
+      "title": "Flensburger Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Flensburg"
+    },
+    {
+      "title": "Grönwohlder Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Grönwohld"
+    },
+    {
+      "title": "Hansens Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Flensburg"
+    },
+    {
+      "title": "Husums Brauhaus",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Husum"
+    },
+    {
+      "title": "Kieler Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Kiel"
+    },
+    {
+      "title": "Klüvers Brauhaus",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Neustadt in Holstein"
+    },
+    {
+      "title": "Ricklinger Landbrauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Rickling"
+    },
+    {
+      "title": "Schwarzenbeker Brauhaus KG",
+      "bundesland": "Schleswig-Holstein",
+      "ort": "Schwarzenbek "
+    },
+    {
+      "title": "Wacken Brauerei",
+      "bundesland": "Schleswig-Holstein",
+      "ort": " Wacken"
+    },
+    {
+      "title": "Altenauer Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Altenau"
+    },
+    {
+      "title": "Altes Brauhaus zu Fallersleben",
+      "bundesland": "Niedersachsen",
+      "ort": "Wolfsburg - Fallersleben"
+    },
+    {
+      "title": "Altstadtbrauerei Marienbräu",
+      "bundesland": "Niedersachsen",
+      "ort": "Jever"
+    },
+    {
+      "title": "Artland Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Nor-up"
+    },
+    {
+      "title": "Bergbräu",
+      "bundesland": "Niedersachsen",
+      "ort": "Uslar"
+    },
+    {
+      "title": "Bleckeder Brauhaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Bleckede "
+    },
+    {
+      "title": "Brauerei Allersheim",
+      "bundesland": "Niedersachsen",
+      "ort": "Holzminden"
+    },
+    {
+      "title": "Brauerei Betz",
+      "bundesland": "Niedersachsen",
+      "ort": "Celle"
+    },
+    {
+      "title": "Brauerei Borchert",
+      "bundesland": "Niedersachsen",
+      "ort": "Lünne "
+    },
+    {
+      "title": "Brauerei Wittingen",
+      "bundesland": "Niedersachsen",
+      "ort": "Wittingen"
+    },
+    {
+      "title": "Braugasthaus Mühlengrund Kollmann Gastronomiegesellschaft mbH",
+      "bundesland": "Niedersachsen"
+    },
+    {
+      "title": "Brauhaus Alt Neuhaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Neuhaus (Oste)"
+    },
+    {
+      "title": "Brauhaus Ernst August",
+      "bundesland": "Niedersachsen",
+      "ort": "Hannover"
+    },
+    {
+      "title": "Brauhaus Goslar",
+      "bundesland": "Niedersachsen",
+      "ort": "Goslar"
+    },
+    {
+      "title": "Brauhaus Jever",
+      "bundesland": "Niedersachsen",
+      "ort": "Jever"
+    },
+    {
+      "title": "Buxtehuder Brauhaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Buxtehude"
+    },
+    {
+      "title": "Der Waldkater",
+      "bundesland": "Niedersachsen",
+      "ort": "Rinteln"
+    },
+    {
+      "title": "Einbecker Brauhaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Einbeck"
+    },
+    {
+      "title": "Gasthausbrauerei & Brennerei Nolte",
+      "bundesland": "Niedersachsen",
+      "ort": "Lüneburg"
+    },
+    {
+      "title": "Getränke Ahlers",
+      "bundesland": "Niedersachsen",
+      "ort": " Achim"
+    },
+    {
+      "title": "Gilde Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Hannover"
+    },
+    {
+      "title": "H. Nettelbeck KG",
+      "bundesland": "Niedersachsen",
+      "ort": "Braunschweig"
+    },
+    {
+      "title": "Hamelner Brauhaus AG",
+      "bundesland": "Niedersachsen",
+      "ort": "Hameln"
+    },
+    {
+      "title": "Härke Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Peine"
+    },
+    {
+      "title": "Herrenhäuser Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Hannover"
+    },
+    {
+      "title": "Hildesheimer Braumanufaktur",
+      "bundesland": "Niedersachsen",
+      "ort": " Hildesheim "
+    },
+    {
+      "title": "Hofbrauhaus Wolters",
+      "bundesland": "Niedersachsen",
+      "ort": "Braunschweig"
+    },
+    {
+      "title": "Hotel Elbblick Bernd Eckhoff",
+      "bundesland": "Niedersachsen",
+      "ort": "Jork"
+    },
+    {
+      "title": "Hotel Selsinger Hof",
+      "bundesland": "Niedersachsen",
+      "ort": "Selsingen"
+    },
+    {
+      "title": "Klindworths Gasthof",
+      "bundesland": "Niedersachsen",
+      "ort": "Sauensiek"
+    },
+    {
+      "title": "Langeooger Inselbrauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Langeoog "
+    },
+    {
+      "title": "Mad Dukes Brewery UG",
+      "bundesland": "Niedersachsen",
+      "ort": " Wolfenbüttel"
+    },
+    {
+      "title": "Meyer Braugesellschaft KG",
+      "bundesland": "Niedersachsen",
+      "ort": "Walsrode"
+    },
+    {
+      "title": "Ostfriesen Bräu - Historische Landbrauerei mit Brauhaus",
+      "bundesland": "Niedersachsen"
+    },
+    {
+      "title": "Privatbrauerei STEBNER",
+      "bundesland": "Niedersachsen",
+      "ort": "Sickte"
+    },
+    {
+      "title": "Rampendahl Hausbrauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Osnabrück"
+    },
+    {
+      "title": "Rupp Bräu Lauenau",
+      "bundesland": "Niedersachsen",
+      "ort": "Lauenau "
+    },
+    {
+      "title": "Schadt's Brauerei Gasthaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Braunschweig"
+    },
+    {
+      "title": "Schaumburger Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Stadthagen"
+    },
+    {
+      "title": "Vareler Brauhaus",
+      "bundesland": "Niedersachsen",
+      "ort": "Varel"
+    },
+    {
+      "title": "Wendland Bräu",
+      "bundesland": "Niedersachsen",
+      "ort": "Clenze"
+    },
+    {
+      "title": "Werdum Brauerei",
+      "bundesland": "Niedersachsen",
+      "ort": "Werdum"
+    },
+    {
+      "title": "Aachener Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Aachen"
+    },
+    {
+      "title": "Aachener Spezial-Biere",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Baesweiler"
+    },
+    {
+      "title": "Aldi Nord Bier",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Essen"
+    },
+    {
+      "title": "Aldi Süd Bier",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Mülheim an der Ruhr"
+    },
+    {
+      "title": "Altstadt-Bräu Johann Sion KG",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Bad Münstereifeler Gasthaus Brauerei",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Barre Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Lübbecke"
+    },
+    {
+      "title": "Bocholter Brauhaus Frank Hellwig e.K.",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bocholt"
+    },
+    {
+      "title": "Bolten Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Korschenbroisch"
+    },
+    {
+      "title": "Brau im Haus W.B. Gastro GmbH",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauerei Bosch",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bad Laasphe"
+    },
+    {
+      "title": "Brauerei Füchschen",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Brauerei Königshof",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Krefeld"
+    },
+    {
+      "title": "Brauerei Päffgen",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauerei Pinkus Müller",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Münster"
+    },
+    {
+      "title": "Brauerei Rainer & Sohn",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Linnich-Welz"
+    },
+    {
+      "title": "Brauerei Röhr Bräu",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Barn-up-Sonneborn"
+    },
+    {
+      "title": "Brauerei Schlösser",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Brauerei Schumacher",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Brauerei Schwelm",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Schwelm"
+    },
+    {
+      "title": "Brauerei Sester Kölsch",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauerei Strate",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Detmold"
+    },
+    {
+      "title": "Brauerei zum Stefanus Familie Michael Stefan Kolonko",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Brauerei zur Malzmühle Schwartz KG",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauereierlebnis Dortmund",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Dortmund"
+    },
+    {
+      "title": "Brauereihotel Alte Post",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Gladbeck"
+    },
+    {
+      "title": "Brauhaus am Dom",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauhaus Bönnsch Klein-Voit G.b.R.",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bonn"
+    },
+    {
+      "title": "Brauhaus Bottich",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bot-op"
+    },
+    {
+      "title": "Brauhaus Espelkamp Gastronomie und Catering Schneider",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Brauhaus Gummersbach",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Gummersbach"
+    },
+    {
+      "title": "Brauhaus Hibernia",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Gelsenkirchen"
+    },
+    {
+      "title": "Brauhaus J. F. Irle",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Siegen"
+    },
+    {
+      "title": "Brauhaus Kirchhellen",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bot-op-Kirchhellen "
+    },
+    {
+      "title": "Brauhaus Rheinbach",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Rheinbach"
+    },
+    {
+      "title": "Brauhaus Schillerbad",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Lüdenscheid "
+    },
+    {
+      "title": "Brauhaus Schreckenskammer",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauhaus Sion",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Brauhaus Stephanus oHG",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Coesfeld"
+    },
+    {
+      "title": "Brauhaus Stiefel-Jürgens",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Beckum"
+    },
+    {
+      "title": "Brauhaus Thombansen",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Lippstadt"
+    },
+    {
+      "title": "Brauhaus Troisdorf",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Troisdorf"
+    },
+    {
+      "title": "Brauhaus Urfels",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Duisburg-Walsum"
+    },
+    {
+      "title": "Brauhaus Zeche Jacobi",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Oberhausen"
+    },
+    {
+      "title": "Brauhaus Zwiebel",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Soest"
+    },
+    {
+      "title": "Braukeller Wassenberg",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Wassenberg"
+    },
+    {
+      "title": "Brinkhoffs Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Dortmund"
+    },
+    {
+      "title": "Cölner Hofbräu Früh",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Cornelius Bräu",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Aachen"
+    },
+    {
+      "title": "Cramer Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Nideggen Wollersheim"
+    },
+    {
+      "title": "Diebels Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Issum"
+    },
+    {
+      "title": "Duckstein",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Mönchengladbach"
+    },
+    {
+      "title": "Eichener Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Kreuztal Eichen"
+    },
+    {
+      "title": "Ennert Bräu",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bonn Beuel Pützchen"
+    },
+    {
+      "title": "Erlebnisbrauerei - Lohmar",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Lohmar "
+    },
+    {
+      "title": "Erzquell Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Wiehl Bielstein"
+    },
+    {
+      "title": "Esloher Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Esloh"
+    },
+    {
+      "title": "Fiege Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bochum"
+    },
+    {
+      "title": "Frankenheim Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Freiherr von Fürstenberg Gaugreben`sche Verwaltung",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Gaffel Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Garde Kölsch",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Gasthof Willmeroth",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Windeck-Mauel"
+    },
+    {
+      "title": "Gaststätte Hensen Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Mönchengladbach"
+    },
+    {
+      "title": "Gemünder Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Schleiden-Gemünd"
+    },
+    {
+      "title": "Gilden Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Gleumes Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Krefeld"
+    },
+    {
+      "title": "Gütersloher Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Gütersloh"
+    },
+    {
+      "title": "Haus Kölscher Brautradition",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Hausbrauerei Manfred Freischem",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Hausbrauerei Schmitz Mönk",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Willich"
+    },
+    {
+      "title": "Hausbrauerei Wirtschaft Richard Becker",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Remscheid"
+    },
+    {
+      "title": "Hausbrauerei zum Schlüssel",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Hellers Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Herforder Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Hiddenhausen"
+    },
+    {
+      "title": "HILFARTHER BRAUHAUS",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": " HILFARTH"
+    },
+    {
+      "title": "Hohenfelder Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Langenberg"
+    },
+    {
+      "title": "Hövels Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Dortmund"
+    },
+    {
+      "title": "Ilsen Brauerei Ludger Gross Bölting",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Kreuztal"
+    },
+    {
+      "title": "Isenbeck c/o Paderborner Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Paderborn"
+    },
+    {
+      "title": "Isendorfer Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Emsdetten"
+    },
+    {
+      "title": "Iserlohn Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Iserlohn"
+    },
+    {
+      "title": "Klutes Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Havixbeck"
+    },
+    {
+      "title": "König Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Duisburg"
+    },
+    {
+      "title": "Krombacher Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Kreuztal Krombach"
+    },
+    {
+      "title": "Kultur- & Kommunikationszentrum Lindenbrauerei e.V.",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Lennet Brau- und Vertriebsgesellschaft Aachen UG",
+      "bundesland": "Nordrhein-Westfalen"
+    },
+    {
+      "title": "Liebharts Privatbrauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Detmold"
+    },
+    {
+      "title": "McMüller's Brauereigasthof",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Linnich-Kofferen"
+    },
+    {
+      "title": "Meierhof Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Höxter-Ottbergen"
+    },
+    {
+      "title": "Paderborner Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Paderborn"
+    },
+    {
+      "title": "Penny Biere",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Peters Bauernstube",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Haltern am See"
+    },
+    {
+      "title": "Peters Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Pfaffen Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln "
+    },
+    {
+      "title": "Potts Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Oelde"
+    },
+    {
+      "title": "REAL Bier",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Reissdorf Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln"
+    },
+    {
+      "title": "Rolinck Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Steinfurt"
+    },
+    {
+      "title": "Rotingdorfer Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": " Werther "
+    },
+    {
+      "title": "Ruhrtal Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Witten- Heven"
+    },
+    {
+      "title": "Rüttenscheider Hausbrauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Essen (Rüttenscheid)"
+    },
+    {
+      "title": "Schloßbrauerei Rheder",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Rheder"
+    },
+    {
+      "title": "Siegburger Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Siegburg"
+    },
+    {
+      "title": "Stauder Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Essen"
+    },
+    {
+      "title": "Steffens Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Bornheim"
+    },
+    {
+      "title": "Sünner Kölsch Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Köln Kalk"
+    },
+    {
+      "title": "Uerige Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Düsseldorf"
+    },
+    {
+      "title": "Veltins Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Grevenstein "
+    },
+    {
+      "title": "Vormann Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Hagen Dahl"
+    },
+    {
+      "title": "Vredener Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Vreden"
+    },
+    {
+      "title": "Warburger Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Warburg"
+    },
+    {
+      "title": "Warsteiner Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Warstein"
+    },
+    {
+      "title": "Webster Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Duisburg"
+    },
+    {
+      "title": "WENKERS am Markt",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Dortmund "
+    },
+    {
+      "title": "Westheimer Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Westheim"
+    },
+    {
+      "title": "Wicküler Brauerei",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Dortmund"
+    },
+    {
+      "title": "Wuppertaler Brauhaus",
+      "bundesland": "Nordrhein-Westfalen",
+      "ort": "Wuppertal"
+    },
+    {
+      "title": "Adler Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Stettfeld"
+    },
+    {
+      "title": "Ahornberger Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Konradsreuth"
+    },
+    {
+      "title": "Ambräusianum",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Arnsteiner Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Arnstein"
+    },
+    {
+      "title": "Bayreuther Bierbrauerei",
+      "bundesland": "Region Franken",
+      "ort": "Bayreuth "
+    },
+    {
+      "title": "Beck Bräu OHG",
+      "bundesland": "Region Franken",
+      "ort": "Trabelsdorf"
+    },
+    {
+      "title": "Bierbrauerei Frank Engelhardt und Winfried Zippel GbR",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauer Vereinigung Pegnitz",
+      "bundesland": "Region Franken",
+      "ort": "Pegnitz"
+    },
+    {
+      "title": "Brauerei & Gasthof zur Sonne",
+      "bundesland": "Region Franken",
+      "ort": "Bischberg"
+    },
+    {
+      "title": "Brauerei & Gasthof Zwanzger",
+      "bundesland": "Region Franken",
+      "ort": "Uehlfeld"
+    },
+    {
+      "title": "Brauerei & Landgasthof Kürzdörfer",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauerei Aichinger",
+      "bundesland": "Region Franken",
+      "ort": "Heiligenstadt"
+    },
+    {
+      "title": "Brauerei Ammerndorfer",
+      "bundesland": "Region Franken",
+      "ort": "Ammerndorf"
+    },
+    {
+      "title": "Brauerei Barth-Senger",
+      "bundesland": "Region Franken",
+      "ort": "Schesslitz"
+    },
+    {
+      "title": "Brauerei Becher Bayreuth",
+      "bundesland": "Region Franken",
+      "ort": "Bayreuth"
+    },
+    {
+      "title": "Brauerei Blauer Löwe",
+      "bundesland": "Region Franken",
+      "ort": "Höchstadt a. d. Aisch"
+    },
+    {
+      "title": "Brauerei Bräutigam",
+      "bundesland": "Region Franken",
+      "ort": "Weisbrunn"
+    },
+    {
+      "title": "Brauerei Bub",
+      "bundesland": "Region Franken",
+      "ort": "Leinburg"
+    },
+    {
+      "title": "Brauerei Büttner",
+      "bundesland": "Region Franken",
+      "ort": "Frensdorf-Untergreuth"
+    },
+    {
+      "title": "Brauerei Drei Kronen in Schesslitz",
+      "bundesland": "Region Franken",
+      "ort": "Schesslitz"
+    },
+    {
+      "title": "Brauerei Düll",
+      "bundesland": "Region Franken",
+      "ort": "VolkachKrautheim"
+    },
+    {
+      "title": "Brauerei Eichhorn",
+      "bundesland": "Region Franken",
+      "ort": "Hallstadt"
+    },
+    {
+      "title": "Brauerei Eller",
+      "bundesland": "Region Franken",
+      "ort": "Untersiemau-Birkach am Forst<br>"
+    },
+    {
+      "title": "Brauerei Enzensteiner",
+      "bundesland": "Region Franken",
+      "ort": "Schnaittach"
+    },
+    {
+      "title": "Brauerei F. Hebendanz GbR",
+      "bundesland": "Region Franken",
+      "ort": "Forchheim "
+    },
+    {
+      "title": "Brauerei Fässla",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Brauerei Fischer",
+      "bundesland": "Region Franken",
+      "ort": "Rattelsdorf"
+    },
+    {
+      "title": "Brauerei Friedel",
+      "bundesland": "Region Franken",
+      "ort": "Zentbechhofen"
+    },
+    {
+      "title": "Brauerei Friedmann",
+      "bundesland": "Region Franken",
+      "ort": "Gräfenberg"
+    },
+    {
+      "title": "Brauerei Fritz Barnikel",
+      "bundesland": "Region Franken",
+      "ort": "Frensdorf"
+    },
+    {
+      "title": "Brauerei Gasthof Drummer",
+      "bundesland": "Region Franken",
+      "ort": "Leutenbach"
+    },
+    {
+      "title": "Brauerei Gasthof Rittmayer",
+      "bundesland": "Region Franken",
+      "ort": "Adelsdorf "
+    },
+    {
+      "title": "Brauerei Gasthof Schroll",
+      "bundesland": "Region Franken",
+      "ort": "Reckendorf"
+    },
+    {
+      "title": "Brauerei Gasthof Zur Sonne",
+      "bundesland": "Region Franken",
+      "ort": "Bischberg"
+    },
+    {
+      "title": "Brauerei Goldner Löwe",
+      "bundesland": "Region Franken",
+      "ort": "Eggolsheim "
+    },
+    {
+      "title": "Brauerei Göller",
+      "bundesland": "Region Franken",
+      "ort": "Zeil am Main"
+    },
+    {
+      "title": "Brauerei Gradl",
+      "bundesland": "Region Franken",
+      "ort": "Pegnitz"
+    },
+    {
+      "title": "Brauerei Grasser Huppendorf",
+      "bundesland": "Region Franken",
+      "ort": "Königsfeld Oberfranken"
+    },
+    {
+      "title": "Brauerei Greif",
+      "bundesland": "Region Franken",
+      "ort": "Forchheim"
+    },
+    {
+      "title": "Brauerei Greifenklau",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Brauerei Griess",
+      "bundesland": "Region Franken",
+      "ort": "Geisfeld"
+    },
+    {
+      "title": "Brauerei Gundel",
+      "bundesland": "Region Franken",
+      "ort": "Barthelmesaurach"
+    },
+    {
+      "title": "Brauerei Haberstumpf",
+      "bundesland": "Region Franken",
+      "ort": "Trebgast"
+    },
+    {
+      "title": "Brauerei Hartleb",
+      "bundesland": "Region Franken",
+      "ort": "Maroldsweisach"
+    },
+    {
+      "title": "Brauerei Hartmann",
+      "bundesland": "Region Franken",
+      "ort": "Schesslitz-Würgau"
+    },
+    {
+      "title": "Brauerei Hauf",
+      "bundesland": "Region Franken",
+      "ort": "Dinkelsbühl"
+    },
+    {
+      "title": "Brauerei Hauf e.K",
+      "bundesland": "Region Franken",
+      "ort": "Dentlein am Forst"
+    },
+    {
+      "title": "Brauerei Heckel",
+      "bundesland": "Region Franken",
+      "ort": "Waischenfeld"
+    },
+    {
+      "title": "Brauerei Heller",
+      "bundesland": "Region Franken",
+      "ort": "Herzogenaurach"
+    },
+    {
+      "title": "Brauerei Heller Herzogenaurach",
+      "bundesland": "Region Franken",
+      "ort": "Herzogenaurach"
+    },
+    {
+      "title": "Brauerei Hellmuth",
+      "bundesland": "Region Franken",
+      "ort": "Bad Staffelstein"
+    },
+    {
+      "title": "Brauerei Helmut Stöckel",
+      "bundesland": "Region Franken",
+      "ort": "Ahorntal"
+    },
+    {
+      "title": "Brauerei Hennemann",
+      "bundesland": "Region Franken",
+      "ort": "Pommersfelden"
+    },
+    {
+      "title": "Brauerei Herold",
+      "bundesland": "Region Franken",
+      "ort": "BüchenbachPegnitz"
+    },
+    {
+      "title": "Brauerei Herrmann",
+      "bundesland": "Region Franken",
+      "ort": "Burgebrach-Ampferbach "
+    },
+    {
+      "title": "Brauerei Hertlein",
+      "bundesland": "Region Franken",
+      "ort": "Oberhaid"
+    },
+    {
+      "title": "Brauerei Hetzel OHG",
+      "bundesland": "Region Franken",
+      "ort": "Bad Staffelstein-Frauendorf "
+    },
+    {
+      "title": "Brauerei Hofmann",
+      "bundesland": "Region Franken",
+      "ort": "Pahres"
+    },
+    {
+      "title": "Brauerei Hofmann/Nentwig GbR",
+      "bundesland": "Region Franken",
+      "ort": "Gräfenberg"
+    },
+    {
+      "title": "Brauerei Hölzlein",
+      "bundesland": "Region Franken",
+      "ort": "Lohndorf Litzendorf"
+    },
+    {
+      "title": "Brauerei Hönig Gasthof zur Post",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauerei Hopfenhäusla",
+      "bundesland": "Region Franken",
+      "ort": "Münchberg"
+    },
+    {
+      "title": "Brauerei Hübner Wattendorf",
+      "bundesland": "Region Franken",
+      "ort": "Wattendorf"
+    },
+    {
+      "title": "Brauerei Hufeisen",
+      "bundesland": "Region Franken",
+      "ort": "Pottenstein"
+    },
+    {
+      "title": "Brauerei Hummel",
+      "bundesland": "Region Franken",
+      "ort": "Merkendorf"
+    },
+    {
+      "title": "Brauerei Hütten",
+      "bundesland": "Region Franken",
+      "ort": "Warmensteinach"
+    },
+    {
+      "title": "Brauerei Kaiser",
+      "bundesland": "Region Franken",
+      "ort": "Burgebrach"
+    },
+    {
+      "title": "Brauerei Kaiserhof - Kaiserhof-Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Kronach"
+    },
+    {
+      "title": "Brauerei Keesmann",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Brauerei Knoblach",
+      "bundesland": "Region Franken",
+      "ort": "Schammelsdorf "
+    },
+    {
+      "title": "Brauerei Konrad Will",
+      "bundesland": "Region Franken",
+      "ort": "Schederndorf"
+    },
+    {
+      "title": "Brauerei Kraus",
+      "bundesland": "Region Franken",
+      "ort": "Hirschaid"
+    },
+    {
+      "title": "Brauerei Kreuzberg",
+      "bundesland": "Region Franken",
+      "ort": "BischofsheimRhön"
+    },
+    {
+      "title": "Brauerei Kundmüller",
+      "bundesland": "Region Franken",
+      "ort": "Viereth-Trunstadt"
+    },
+    {
+      "title": "Brauerei Kürzdörfer",
+      "bundesland": "Region Franken",
+      "ort": "Creussen Lindenhardt"
+    },
+    {
+      "title": "Brauerei Leonhard Schübel oHG",
+      "bundesland": "Region Franken",
+      "ort": "Stadtsteinach"
+    },
+    {
+      "title": "Brauerei Lieberth",
+      "bundesland": "Region Franken",
+      "ort": "Hallerndorf"
+    },
+    {
+      "title": "Brauerei Loscher KG",
+      "bundesland": "Region Franken",
+      "ort": "Münchsteinach"
+    },
+    {
+      "title": "Brauerei Martin",
+      "bundesland": "Region Franken",
+      "ort": "SchonungenHausen"
+    },
+    {
+      "title": "Brauerei Müller Debring",
+      "bundesland": "Region Franken",
+      "ort": "Debring"
+    },
+    {
+      "title": "Brauerei Müller Reundorf",
+      "bundesland": "Region Franken",
+      "ort": "Frensdorf-Reundorf"
+    },
+    {
+      "title": "Brauerei Neder",
+      "bundesland": "Region Franken",
+      "ort": "Forchheim "
+    },
+    {
+      "title": "Brauerei Nikl",
+      "bundesland": "Region Franken",
+      "ort": "Pretzfeld"
+    },
+    {
+      "title": "Brauerei Norbert Fischer",
+      "bundesland": "Region Franken",
+      "ort": "Höchstadt an der Aisch"
+    },
+    {
+      "title": "Brauerei Ott",
+      "bundesland": "Region Franken",
+      "ort": "Heiligenstadt"
+    },
+    {
+      "title": "Brauerei Pfister",
+      "bundesland": "Region Franken",
+      "ort": "Eggolsheim"
+    },
+    {
+      "title": "Brauerei Pottenstein",
+      "bundesland": "Region Franken",
+      "ort": "Pottenstein"
+    },
+    {
+      "title": "Brauerei Prechtel",
+      "bundesland": "Region Franken",
+      "ort": "Uehlfeld"
+    },
+    {
+      "title": "Brauerei Reblitz",
+      "bundesland": "Region Franken",
+      "ort": "Bad Staffelstein Nedensdorf"
+    },
+    {
+      "title": "Brauerei Reichold",
+      "bundesland": "Region Franken",
+      "ort": "Aufsess"
+    },
+    {
+      "title": "Brauerei Rittmayer",
+      "bundesland": "Region Franken",
+      "ort": "Hallerndorf"
+    },
+    {
+      "title": "Brauerei Roppelt",
+      "bundesland": "Region Franken",
+      "ort": "Hallerndorf"
+    },
+    {
+      "title": "Brauerei Roth",
+      "bundesland": "Region Franken",
+      "ort": "Schweinfurt"
+    },
+    {
+      "title": "Brauerei Sauer",
+      "bundesland": "Region Franken",
+      "ort": "Rossdorf am Forst"
+    },
+    {
+      "title": "Brauerei Sauer Röttenbach",
+      "bundesland": "Region Franken",
+      "ort": "Röttenbach"
+    },
+    {
+      "title": "Brauerei Scharpf",
+      "bundesland": "Region Franken",
+      "ort": "Heilgersdorf"
+    },
+    {
+      "title": "Brauerei Schlenkerla",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Brauerei Schroll",
+      "bundesland": "Region Franken",
+      "ort": "Waischenfeld"
+    },
+    {
+      "title": "Brauerei Schrüfer Priesendorf",
+      "bundesland": "Region Franken",
+      "ort": "Priesendorf"
+    },
+    {
+      "title": "Brauerei Schwarzes Kreuz",
+      "bundesland": "Region Franken",
+      "ort": "Eggolsheim"
+    },
+    {
+      "title": "Brauerei Sigwart",
+      "bundesland": "Region Franken",
+      "ort": "Weissenburg"
+    },
+    {
+      "title": "Brauerei Simon",
+      "bundesland": "Region Franken",
+      "ort": "Lauf a.d. Pegnitz"
+    },
+    {
+      "title": "Brauerei Spezial Familie Merz",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Brauerei Strauss",
+      "bundesland": "Region Franken",
+      "ort": "Wettelsheim"
+    },
+    {
+      "title": "Brauerei Thereser",
+      "bundesland": "Region Franken",
+      "ort": "Untertheres"
+    },
+    {
+      "title": "Brauerei und Gasthof Adler-Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Schlüsselfeld"
+    },
+    {
+      "title": "Brauerei und Gasthof Göller",
+      "bundesland": "Region Franken",
+      "ort": "Memmelsdorf-Drosendorf"
+    },
+    {
+      "title": "Brauerei und Gastwirtschaft Alt",
+      "bundesland": "Region Franken",
+      "ort": "Leutenbach"
+    },
+    {
+      "title": "Brauerei und Gastwirtschaft Dremel",
+      "bundesland": "Region Franken",
+      "ort": "Wattendorf"
+    },
+    {
+      "title": "Brauerei Wagner",
+      "bundesland": "Region Franken",
+      "ort": "Kemmern "
+    },
+    {
+      "title": "Brauerei Wagner Merkendorf",
+      "bundesland": "Region Franken",
+      "ort": "Merkendorf"
+    },
+    {
+      "title": "Brauerei Weber",
+      "bundesland": "Region Franken",
+      "ort": "Röbersdorf"
+    },
+    {
+      "title": "Brauerei Weinig",
+      "bundesland": "Region Franken",
+      "ort": "Gerolzhofen"
+    },
+    {
+      "title": "Brauerei Wernsdörfer",
+      "bundesland": "Region Franken",
+      "ort": "Schönbrunn"
+    },
+    {
+      "title": "Brauerei Wiethaler",
+      "bundesland": "Region Franken",
+      "ort": "Neunhof"
+    },
+    {
+      "title": "Brauerei Windsheimer",
+      "bundesland": "Region Franken",
+      "ort": "Gutenstetten"
+    },
+    {
+      "title": "Brauerei Winkler Melkendorf",
+      "bundesland": "Region Franken",
+      "ort": "LitzendorfMelkendorf"
+    },
+    {
+      "title": "Brauerei Wolf",
+      "bundesland": "Region Franken",
+      "ort": "Rüdenhausen"
+    },
+    {
+      "title": "Brauerei Zehendner",
+      "bundesland": "Region Franken",
+      "ort": "Mönchsambach"
+    },
+    {
+      "title": "Brauerei Zirndorf",
+      "bundesland": "Region Franken",
+      "ort": "Zirndorf"
+    },
+    {
+      "title": "Brauerei Zum Goldenen Adler",
+      "bundesland": "Region Franken",
+      "ort": "Rattelsdorf"
+    },
+    {
+      "title": "Brauerei-Gasthaus Fössel-Mazour",
+      "bundesland": "Region Franken",
+      "ort": "Appendorf"
+    },
+    {
+      "title": "Brauerei-Gasthaus Thomann",
+      "bundesland": "Region Franken",
+      "ort": "Bad Staffelstein OT Wiesen"
+    },
+    {
+      "title": "Brauerei-Gasthof Höhn",
+      "bundesland": "Region Franken",
+      "ort": "Memmelsdorf"
+    },
+    {
+      "title": "Brauerei-Gasthof Leicht",
+      "bundesland": "Region Franken",
+      "ort": "Ebensfeld"
+    },
+    {
+      "title": "Brauerei-Gasthof Trunk Vierzehnheiligen",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauerei-Gasthof Wichert KG",
+      "bundesland": "Region Franken",
+      "ort": "Lichtenfels"
+    },
+    {
+      "title": "Brauerei-Gasthof Zum Grünen Baum",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauerei-Gasthof Zur Sonne Mürsbach",
+      "bundesland": "Region Franken",
+      "ort": "Mürsbach"
+    },
+    {
+      "title": "Brauerei-Gastof-Pension Dinkel",
+      "bundesland": "Region Franken",
+      "ort": "Bad Staffelstein"
+    },
+    {
+      "title": "Brauereigasthof Günter Scheubel Sternbräu",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauereigasthof Rothenbach",
+      "bundesland": "Region Franken",
+      "ort": "Aufsess"
+    },
+    {
+      "title": "Brauereigasthof Seelmann",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauereigasthof Stadter",
+      "bundesland": "Region Franken",
+      "ort": "Sachsendorf"
+    },
+    {
+      "title": "Brauereigaststätte Hoh",
+      "bundesland": "Region Franken",
+      "ort": "Schesslitz"
+    },
+    {
+      "title": "Brauhaus - Barbarossa Regina Pabst e.K.",
+      "bundesland": "Region Franken",
+      "ort": "Schöllkrippen"
+    },
+    {
+      "title": "Brauhaus am Kreuzberg",
+      "bundesland": "Region Franken",
+      "ort": "Hallerndorf"
+    },
+    {
+      "title": "Brauhaus Binkert",
+      "bundesland": "Region Franken",
+      "ort": "Breitengüßbach "
+    },
+    {
+      "title": "Brauhaus Döbler",
+      "bundesland": "Region Franken",
+      "ort": "Bad Windsheim"
+    },
+    {
+      "title": "Brauhaus Faust",
+      "bundesland": "Region Franken",
+      "ort": "Miltenberg"
+    },
+    {
+      "title": "Brauhaus Höchstadt/Aisch e.G.",
+      "bundesland": "Region Franken",
+      "ort": "Höchstadt"
+    },
+    {
+      "title": "Brauhaus im Wurzgrund - Karschter Brauhaus",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Brauhaus Jochsberg Familie Reindler",
+      "bundesland": "Region Franken",
+      "ort": "Leutershausen"
+    },
+    {
+      "title": "Brauhaus Ploss",
+      "bundesland": "Region Franken",
+      "ort": "Selb"
+    },
+    {
+      "title": "Brauhaus Schweinfurt",
+      "bundesland": "Region Franken",
+      "ort": "Schweinfurt"
+    },
+    {
+      "title": "Bürgerliches Brauhaus Wiesen",
+      "bundesland": "Region Franken",
+      "ort": "Wiesen"
+    },
+    {
+      "title": "Drei Kronen Memmelsdorf Brauerei und Gasthof, Straub KG",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Ebensfelder-Brauhaus",
+      "bundesland": "Region Franken",
+      "ort": "Ebensfeld"
+    },
+    {
+      "title": "Eders Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Grossostheim"
+    },
+    {
+      "title": "Elch-Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Gräfenberg "
+    },
+    {
+      "title": "Eschenbacher Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Eltmann Eschenbach"
+    },
+    {
+      "title": "Felsenbräu",
+      "bundesland": "Region Franken",
+      "ort": "Thalmannsfeld"
+    },
+    {
+      "title": "Fischer Landbräu",
+      "bundesland": "Region Franken",
+      "ort": "Wieseth"
+    },
+    {
+      "title": "Franken Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Mitwitz im Frankenwald"
+    },
+    {
+      "title": "Fürstliches Brauhaus Ellingen",
+      "bundesland": "Region Franken",
+      "ort": "Ellingen"
+    },
+    {
+      "title": "Gampertbräu",
+      "bundesland": "Region Franken",
+      "ort": "Weissenbrunn Kronach"
+    },
+    {
+      "title": "Gasthaus & Brauerei Roppelt",
+      "bundesland": "Region Franken",
+      "ort": "Trossenfurt"
+    },
+    {
+      "title": "Gasthausbrauerei Homburger Bräuscheuere",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Gasthof Grosch",
+      "bundesland": "Region Franken",
+      "ort": "Rödental"
+    },
+    {
+      "title": "Gaststätte Lindwurmbräu",
+      "bundesland": "Region Franken",
+      "ort": "Heideck"
+    },
+    {
+      "title": "Georgen Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Buttenheim"
+    },
+    {
+      "title": "Gottsmannsgrüner Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Berg"
+    },
+    {
+      "title": "Gunzendorfer Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Gunzendorf"
+    },
+    {
+      "title": "Hauff Bräu Lichtenau",
+      "bundesland": "Region Franken",
+      "ort": "Lichtenau"
+    },
+    {
+      "title": "Hausbräu Stegaurach & Zeltverleih Winkler",
+      "bundesland": "Region Franken",
+      "ort": "Stegaurach"
+    },
+    {
+      "title": "Hausbrauerei Düll",
+      "bundesland": "Region Franken",
+      "ort": "Marktbreit - Gnodstadt"
+    },
+    {
+      "title": "Hausbrauerei Höpfl",
+      "bundesland": "Region Franken",
+      "ort": "Steinfeld-Waldzell"
+    },
+    {
+      "title": "Held Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Ahorntal"
+    },
+    {
+      "title": "Hochholzer Brauhaus Pöverlein GbR",
+      "bundesland": "Region Franken",
+      "ort": "Solnhofen"
+    },
+    {
+      "title": "Hohe- Wart-Haus Familie Tobias",
+      "bundesland": "Region Franken",
+      "ort": "Aschaffenburg "
+    },
+    {
+      "title": "Hönicka Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Wunsiedel"
+    },
+    {
+      "title": "Hübner Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Stadelhofen"
+    },
+    {
+      "title": "Jahns Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Ludwigsstadt"
+    },
+    {
+      "title": "Jura-Bräu Privatbrauerei",
+      "bundesland": "Region Franken",
+      "ort": "Pegnitz"
+    },
+    {
+      "title": "Kaiser Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Neuhaus"
+    },
+    {
+      "title": "Kaiserdom Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Karmeliter Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Salz "
+    },
+    {
+      "title": "Kathi Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Aufsess"
+    },
+    {
+      "title": "Kauzen Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Ochsenfurt"
+    },
+    {
+      "title": "Keiler Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Lohr am Main"
+    },
+    {
+      "title": "Kitzmann Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Erlangen"
+    },
+    {
+      "title": "Klosterbräu Bamberg",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Kommunbräu Kulmbach",
+      "bundesland": "Region Franken",
+      "ort": "Kulmbach"
+    },
+    {
+      "title": "Kommunbrauhaus Rossach",
+      "bundesland": "Region Franken",
+      "ort": "Großheirath-Rossach"
+    },
+    {
+      "title": "Krug Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Waischenfeld"
+    },
+    {
+      "title": "Kulmbacher Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Kulmbach"
+    },
+    {
+      "title": "Landbrauerei Hennemann",
+      "bundesland": "Region Franken",
+      "ort": "Stublang"
+    },
+    {
+      "title": "Landgasthof Hotel Brauerei Rittmayer",
+      "bundesland": "Region Franken",
+      "ort": "Hallerndorf"
+    },
+    {
+      "title": "Lang-Bräu OHG",
+      "bundesland": "Region Franken",
+      "ort": "Wunsiedel-Schönbrunn"
+    },
+    {
+      "title": "Lederer Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Fürth"
+    },
+    {
+      "title": "Leikeim Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Altenkunstadt"
+    },
+    {
+      "title": "Lindenbräu Gräfenberg",
+      "bundesland": "Region Franken",
+      "ort": "Gräfenberg"
+    },
+    {
+      "title": "Lothar-Bräu",
+      "bundesland": "Region Franken",
+      "ort": " Ebelsbach"
+    },
+    {
+      "title": "Löwenbräu Buttenheim",
+      "bundesland": "Region Franken",
+      "ort": "Buttenheim"
+    },
+    {
+      "title": "Mahr's Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Bamberg"
+    },
+    {
+      "title": "Mainlust Gaststätte",
+      "bundesland": "Region Franken",
+      "ort": "Viereth -Trunstadt"
+    },
+    {
+      "title": "Maisel Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Bayreuth "
+    },
+    {
+      "title": "Martinsbräu",
+      "bundesland": "Region Franken",
+      "ort": "Marktheidenfeld"
+    },
+    {
+      "title": "Meinel Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Hof"
+    },
+    {
+      "title": "Metzgerbräu Hausbrauerei Reichert",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Meusel Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Buttenheim"
+    },
+    {
+      "title": "Mühlenbräu Mühlendorf",
+      "bundesland": "Region Franken",
+      "ort": "Stegaurach-Mühlendorf"
+    },
+    {
+      "title": "Museumsbraugasthaus Jägersruh",
+      "bundesland": "Region Franken",
+      "ort": "Bad Kissingen"
+    },
+    {
+      "title": "Norma Bier",
+      "bundesland": "Region Franken",
+      "ort": "Nürnberg"
+    },
+    {
+      "title": "Nürnberger Altstadthof e. K.",
+      "bundesland": "Region Franken",
+      "ort": "Nürnberg"
+    },
+    {
+      "title": "Öchsner Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Ochsenfurt"
+    },
+    {
+      "title": "Pax Bräu e.K.",
+      "bundesland": "Region Franken",
+      "ort": "Obereisbach"
+    },
+    {
+      "title": "Pfarrbräu Wolfgang Seufert",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Privatbrauerei Eduard Murmann GbR",
+      "bundesland": "Region Franken",
+      "ort": "Untersiemau "
+    },
+    {
+      "title": "Privatbrauerei Eichhorn",
+      "bundesland": "Region Franken",
+      "ort": " Forchheim"
+    },
+    {
+      "title": "Privatbrauerei Günther",
+      "bundesland": "Region Franken",
+      "ort": "Burgkunstadt"
+    },
+    {
+      "title": "Privatbrauerei Hermann Michael e.K.",
+      "bundesland": "Region Franken",
+      "ort": "Weissenstadt"
+    },
+    {
+      "title": "Privatbrauerei Kesselring",
+      "bundesland": "Region Franken",
+      "ort": "Marktsteft"
+    },
+    {
+      "title": "Privatbrauerei Lang",
+      "bundesland": "Region Franken",
+      "ort": "Waltershausen"
+    },
+    {
+      "title": "Privatbrauerei Nothhaft",
+      "bundesland": "Region Franken",
+      "ort": "Mark-edwitz"
+    },
+    {
+      "title": "Privatbrauerei Peter",
+      "bundesland": "Region Franken",
+      "ort": "Ostheim v.d. Rhön"
+    },
+    {
+      "title": "Privatbrauerei Raab",
+      "bundesland": "Region Franken",
+      "ort": "HofheimUfr."
+    },
+    {
+      "title": "Privatbrauerei Reh oHG",
+      "bundesland": "Region Franken",
+      "ort": "Lohndorf"
+    },
+    {
+      "title": "Privatbrauerei Streck Bräu e.K.",
+      "bundesland": "Region Franken",
+      "ort": "Ostheim Rhön"
+    },
+    {
+      "title": "Privater Brauereigasthof Zum Löwenbräu",
+      "bundesland": "Region Franken"
+    },
+    {
+      "title": "Püls-Bräu OHG",
+      "bundesland": "Region Franken",
+      "ort": "Weismain"
+    },
+    {
+      "title": "Pyraser Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Thalmässing"
+    },
+    {
+      "title": "Red Castle Brew",
+      "bundesland": "Region Franken",
+      "ort": "Heroldsberg"
+    },
+    {
+      "title": "Ritter Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Nennslingen"
+    },
+    {
+      "title": "Rother Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Roth v. d. Rhön"
+    },
+    {
+      "title": "Scherdel Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Hof"
+    },
+    {
+      "title": "Schinner Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Bayreuth"
+    },
+    {
+      "title": "Schlossbrauerei Reckendorf",
+      "bundesland": "Region Franken",
+      "ort": "Reckendorf"
+    },
+    {
+      "title": "Schlossbrauerei Stelzer",
+      "bundesland": "Region Franken",
+      "ort": "Oberkotzau"
+    },
+    {
+      "title": "Schorschbräu",
+      "bundesland": "Region Franken",
+      "ort": "Gunzenhausen"
+    },
+    {
+      "title": "Schwanenbräu Ebermannstadt",
+      "bundesland": "Region Franken",
+      "ort": "Ebermannstadt"
+    },
+    {
+      "title": "Schwanenbräu Ebing",
+      "bundesland": "Region Franken",
+      "ort": "Ebing"
+    },
+    {
+      "title": "Schwind Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Aschaffenburg"
+    },
+    {
+      "title": "Seelmann Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Schönbrunn-Zettmannsdorf"
+    },
+    {
+      "title": "Sonnenbräu Lichtenberg",
+      "bundesland": "Region Franken",
+      "ort": "Lichtenberg "
+    },
+    {
+      "title": "Spessart Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Kreuzwertheim"
+    },
+    {
+      "title": "Stadtbrauerei Spalt",
+      "bundesland": "Region Franken",
+      "ort": "Spalt"
+    },
+    {
+      "title": "Staffelberg Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Bad StaffelsteinLoffeld"
+    },
+    {
+      "title": "Steinbach Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Erlangen "
+    },
+    {
+      "title": "Sternbräu Lindner Elsendorf",
+      "bundesland": "Region Franken",
+      "ort": "Schlüsselfeld-Elsendorf"
+    },
+    {
+      "title": "Tucher Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Fürth"
+    },
+    {
+      "title": "Wagner Bräu Oberhaid",
+      "bundesland": "Region Franken",
+      "ort": "Oberhaid "
+    },
+    {
+      "title": "Waldschloss Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Frammersbach"
+    },
+    {
+      "title": "Weißenoher Klosterbrauerei",
+      "bundesland": "Region Franken",
+      "ort": "Weissenohe"
+    },
+    {
+      "title": "Wernecker Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Werneck"
+    },
+    {
+      "title": "Weyberbräu",
+      "bundesland": "Region Franken",
+      "ort": "Sailauf"
+    },
+    {
+      "title": "Will Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Motten"
+    },
+    {
+      "title": "Wittelsbacher Turm Bräu",
+      "bundesland": "Region Franken",
+      "ort": "Bad Kissingen Unterfranken"
+    },
+    {
+      "title": "Wolfshöher Brauerei",
+      "bundesland": "Region Franken",
+      "ort": "Neunkirchen am Sand"
+    },
+    {
+      "title": "Bautzener Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Bautzen"
+    },
+    {
+      "title": "Bayerische Hof Grünbach",
+      "bundesland": "Sachsen",
+      "ort": "Grünbach"
+    },
+    {
+      "title": "Bayerischer Bahnhof Restaurant",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Bergquell Brauerei Löbau",
+      "bundesland": "Sachsen",
+      "ort": "Löbau"
+    },
+    {
+      "title": "Böhmisch Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Grossröhrsdorf"
+    },
+    {
+      "title": "Brauerei an der Thomaskirche",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Brauerei Blechschmidt",
+      "bundesland": "Sachsen",
+      "ort": "Treuen"
+    },
+    {
+      "title": "Brauerei Fiedler",
+      "bundesland": "Sachsen",
+      "ort": "Scheibenberg"
+    },
+    {
+      "title": "Brauerei Gersdorf",
+      "bundesland": "Sachsen",
+      "ort": "Gersdorf"
+    },
+    {
+      "title": "Brauerei Meissen",
+      "bundesland": "Sachsen",
+      "ort": "Meissen"
+    },
+    {
+      "title": "Brauerei Rechenberg",
+      "bundesland": "Sachsen",
+      "ort": "Rechenberg-Bienenmühle"
+    },
+    {
+      "title": "Brauerei Reichenbrand",
+      "bundesland": "Sachsen",
+      "ort": "Chemnitz"
+    },
+    {
+      "title": "Brauerei und Gasthof Zwönitz",
+      "bundesland": "Sachsen",
+      "ort": "Zwönitz"
+    },
+    {
+      "title": "Brauerei Wittichenau",
+      "bundesland": "Sachsen",
+      "ort": "Wittichenau"
+    },
+    {
+      "title": "Brauerei Zwickau",
+      "bundesland": "Sachsen",
+      "ort": "Zwickau"
+    },
+    {
+      "title": "Brauhaus am Waldschlösschen",
+      "bundesland": "Sachsen",
+      "ort": "Dresden"
+    },
+    {
+      "title": "Brauhaus Hartmannsdorf",
+      "bundesland": "Sachsen",
+      "ort": "Hartmannsdorf"
+    },
+    {
+      "title": "Brauhaus Napoleon GbR, Tittel & Winkler",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig "
+    },
+    {
+      "title": "Brauhaus Pirna",
+      "bundesland": "Sachsen",
+      "ort": "Pirna Copitz"
+    },
+    {
+      "title": "Brauhaus Torgau",
+      "bundesland": "Sachsen",
+      "ort": "Torgau"
+    },
+    {
+      "title": "Brauhaus Watzke",
+      "bundesland": "Sachsen",
+      "ort": "Dresden"
+    },
+    {
+      "title": "Brauhaus Weltenbummler",
+      "bundesland": "Sachsen",
+      "ort": "Berggiesshübel"
+    },
+    {
+      "title": "Braustolz",
+      "bundesland": "Sachsen",
+      "ort": "Chemnitz"
+    },
+    {
+      "title": "Eibauer Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Eibau"
+    },
+    {
+      "title": "Einsiedler Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Einsiedel"
+    },
+    {
+      "title": "Erlbacher Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Erlbach"
+    },
+    {
+      "title": "Ernst Flack & Hermann Schwier",
+      "bundesland": "Sachsen",
+      "ort": "Radebeul"
+    },
+    {
+      "title": "Familienbrauerei Ernst Bauer KG",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Feldschlösschen",
+      "bundesland": "Sachsen",
+      "ort": "Dresden"
+    },
+    {
+      "title": "Freiberger Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Freiberg"
+    },
+    {
+      "title": "Getränke Albrecht GmbH",
+      "bundesland": "Sachsen",
+      "ort": "Groitzsch"
+    },
+    {
+      "title": "HammerBräu Riesa",
+      "bundesland": "Sachsen",
+      "ort": "Riesa"
+    },
+    {
+      "title": "Hausbrauerei Laubegast",
+      "bundesland": "Sachsen",
+      "ort": "Dresden"
+    },
+    {
+      "title": "Hausbrauerei Schiller",
+      "bundesland": "Sachsen",
+      "ort": "Wachau"
+    },
+    {
+      "title": "Hotel Blauer Engel",
+      "bundesland": "Sachsen",
+      "ort": "Aue "
+    },
+    {
+      "title": "Klaus Fruchtsäfte & Fruchtweine Cannewitzer Biere",
+      "bundesland": "Sachsen"
+    },
+    {
+      "title": "Krostitzer Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Krostitz"
+    },
+    {
+      "title": "Landskron Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Görlitz"
+    },
+    {
+      "title": "Leipziger Brauhaus zu Reudnitz",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Leipziger Brauhaus zu Reudnitz",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Mauritius Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Zwickau"
+    },
+    {
+      "title": "Missionshof Lieske",
+      "bundesland": "Sachsen",
+      "ort": "Ossling"
+    },
+    {
+      "title": "Nerchauer Brauhaus",
+      "bundesland": "Sachsen",
+      "ort": "Grimma-Nerchau"
+    },
+    {
+      "title": "Neustädter Hausbrauerei",
+      "bundesland": "Sachsen",
+      "ort": "Dresden"
+    },
+    {
+      "title": "Peniger Spezialitäten Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Penig"
+    },
+    {
+      "title": "Radeberger Exportbierbrauerei",
+      "bundesland": "Sachsen",
+      "ort": "Radeberg"
+    },
+    {
+      "title": "Schlossbrauerei Weesenstein",
+      "bundesland": "Sachsen",
+      "ort": "Müglitztal"
+    },
+    {
+      "title": "Specht Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Ehrenfriedersdorf"
+    },
+    {
+      "title": "Spree-Pension Gaststätte, Hotel & Biergarten",
+      "bundesland": "Sachsen",
+      "ort": "Bautzen"
+    },
+    {
+      "title": "Sternburg Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Leipzig"
+    },
+    {
+      "title": "Sternquell Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Plauen"
+    },
+    {
+      "title": "Wernesgrüner Brauerei",
+      "bundesland": "Sachsen",
+      "ort": "Wernesgrün"
+    },
+    {
+      "title": "Aalener Löwenbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Aalen"
+    },
+    {
+      "title": "Adler Bräu GbR Inhaber Ramona Jentzsch-Volk & Robert Volk",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Adler Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Göggingen"
+    },
+    {
+      "title": "Adlerbrauerei Götz",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Geislingen Steige"
+    },
+    {
+      "title": "Albquell Bräuhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Trochtelfingen"
+    },
+    {
+      "title": "Alpirsbacher Klosterbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Alpirsbach"
+    },
+    {
+      "title": "Amadeus Hausbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Baden-Baden"
+    },
+    {
+      "title": "Andreasbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Eggenstein Leopoldshafen"
+    },
+    {
+      "title": "Badisch Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsruhe"
+    },
+    {
+      "title": "Baisinger Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rottenburg a.n. Baisingen"
+    },
+    {
+      "title": "Barfüßer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ulm"
+    },
+    {
+      "title": "Berg Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ehingen Berg"
+    },
+    {
+      "title": "Brauerei Bauhöfer",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ulm Ortenau Baden"
+    },
+    {
+      "title": "Brauerei Blank Geschäftsleitung Thomas Blank",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Brauerei Egolf",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schefflenz "
+    },
+    {
+      "title": "Brauerei Franz Rastatt",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rastatt"
+    },
+    {
+      "title": "Brauerei Gasthof Adler",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Erbach-Dellmensingen"
+    },
+    {
+      "title": "Brauerei Gold Ochsen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ulm"
+    },
+    {
+      "title": "Brauerei Häberlen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Gaildorf "
+    },
+    {
+      "title": "Brauerei Härle",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Leutkirch im Allgäu "
+    },
+    {
+      "title": "Brauerei Lasser",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Lörrach"
+    },
+    {
+      "title": "Brauerei Leibinger",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ravensburg"
+    },
+    {
+      "title": "Brauerei Schimpf",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Neustetten"
+    },
+    {
+      "title": "Brauerei Stolz",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Isny Allgäu"
+    },
+    {
+      "title": "Brauerei u. Gasthof Krone Tettnang",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Tettnang"
+    },
+    {
+      "title": "Brauerei und Getränkehandel e.K. Hubert Mellert",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Brauerei Zoller Hof",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Sigmaringen"
+    },
+    {
+      "title": "Brauerei zum Klosterhof",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidelberg"
+    },
+    {
+      "title": "Brauerei zum Rossknecht",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ludwigsburg"
+    },
+    {
+      "title": "Brauerei zum Stadtpark",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Hockenheim"
+    },
+    {
+      "title": "Brauereigasthof Schöre",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Tettnang"
+    },
+    {
+      "title": "Brauereigesellschaft vorm.Fr.Reitter mbH & Co.",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Brauhaus Joh. Albrecht",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Konstanz"
+    },
+    {
+      "title": "Brauhaus Jupiter",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Sinsheim-Steinsfurt"
+    },
+    {
+      "title": "Brauhaus Kühler Krug",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsruhe"
+    },
+    {
+      "title": "Brauhaus Lamm",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Leutenbach"
+    },
+    {
+      "title": "Brauhaus Pforzheim",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Pforzheim"
+    },
+    {
+      "title": "Brauhaus Sacher",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Leonberg"
+    },
+    {
+      "title": "Bräuhaus Ummendorf",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ummendorf "
+    },
+    {
+      "title": "Brauhaus Vetter",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidelberg "
+    },
+    {
+      "title": "Brauhaus Wallhall, Hotel und Restaurant",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bruchsal"
+    },
+    {
+      "title": "Brauhaus Zollernalb",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Albstadt-Ebingen"
+    },
+    {
+      "title": "Bräunlinger Löwenbrauerei Friedrich Kalb KG",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Brauzentrum Blaubeuren UG",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Blaubeuren"
+    },
+    {
+      "title": "Calwer Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Stuttgart"
+    },
+    {
+      "title": "Christophbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Gaggenau"
+    },
+    {
+      "title": "Dachsenfranz Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Zuzenhausen"
+    },
+    {
+      "title": "Dinkelacker Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Stuttgart"
+    },
+    {
+      "title": "Distelhäuser Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Distelhausen"
+    },
+    {
+      "title": "Dörzbacher Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ahorn Schillingstadt"
+    },
+    {
+      "title": "Drei Kannen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ulm"
+    },
+    {
+      "title": "Eichbaum Brauereien",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Mannheim"
+    },
+    {
+      "title": "Engel Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Crailsheim"
+    },
+    {
+      "title": "Farny Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Kisslegg im Allgäu"
+    },
+    {
+      "title": "Fischers Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Mössingen"
+    },
+    {
+      "title": "Franken Bräu Riedbach",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schrozberg"
+    },
+    {
+      "title": "Fürstenberg Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Donaueschingen "
+    },
+    {
+      "title": "Ganter Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Freiburg"
+    },
+    {
+      "title": "Gasthausbrauerei Neckarmüller",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Tübingen"
+    },
+    {
+      "title": "Gasthof Brauerei zum Schwanen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ehingen"
+    },
+    {
+      "title": "Grünbaum-Brauerei Aalen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Aalen"
+    },
+    {
+      "title": "Häffner Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bad Rappenau"
+    },
+    {
+      "title": "Haller Löwenbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schwäbisch Hall "
+    },
+    {
+      "title": "Härtsfelder Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Dunstelkingen"
+    },
+    {
+      "title": "Hausbräu Mülhaupt Brombach",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Lörrach- Brombach"
+    },
+    {
+      "title": "Hausbrauerei Alter Bahnhof",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Malsch "
+    },
+    {
+      "title": "Hausbrauerei Mönchwasen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Simmozheim "
+    },
+    {
+      "title": "Heidelberger Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidelberg "
+    },
+    {
+      "title": "Herbsthäuser Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bad Mergentheim"
+    },
+    {
+      "title": "Hirsch Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Waldkirch"
+    },
+    {
+      "title": "Hirsch Flözlingen Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Zimmern"
+    },
+    {
+      "title": "Hirschbrauerei Heubach L. Mayer KG",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heubach"
+    },
+    {
+      "title": "Hirschbrauerei Honer",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Wurmlingen"
+    },
+    {
+      "title": "Hirschbrauerei Schilling KG",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Römerstein"
+    },
+    {
+      "title": "Hirschbrauerei Söhnstetten",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Söhnstetten"
+    },
+    {
+      "title": "Hochdorfer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Nagold-Hochdorf"
+    },
+    {
+      "title": "Hoepfner Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsruhe"
+    },
+    {
+      "title": "Hofgut Domäne",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Hechingen "
+    },
+    {
+      "title": "Hopfenschlingel ",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rastatt"
+    },
+    {
+      "title": "Kaiser Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Geislingen"
+    },
+    {
+      "title": "Kellerberg Vertriebsgesellschaft mbH",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Aalen"
+    },
+    {
+      "title": "Kesselhaus Schorndorf",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schorndorf"
+    },
+    {
+      "title": "Ketterer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Hornberg"
+    },
+    {
+      "title": "Königsbräu Majer",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidenheim"
+    },
+    {
+      "title": "Kronenbrauerei Halter",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heilbronn Biberach"
+    },
+    {
+      "title": "Kronenbrauerei Laupheim",
+      "bundesland": "Baden-Württemberg",
+      "ort": " Laupheim"
+    },
+    {
+      "title": "Kronenbrauerei Offenburg",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Offenburg"
+    },
+    {
+      "title": "Kronenbrauerei Russ",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Söflingen"
+    },
+    {
+      "title": "Kulturbrauerei Heidelberg",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidelberg"
+    },
+    {
+      "title": "Kulturbrauerei Heidelberg AG",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Heidelberg"
+    },
+    {
+      "title": "Ladenburger Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Neuler"
+    },
+    {
+      "title": "Lammbrauerei Hilsenbeck",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Gruibingen"
+    },
+    {
+      "title": "Lammbrauerei Untergröningen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Untergröningen"
+    },
+    {
+      "title": "Lammbrauerei Weilheim",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rietheim Weilheim"
+    },
+    {
+      "title": "Lehner Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rosenfeld"
+    },
+    {
+      "title": "Lidl Biere",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Neckarsulm"
+    },
+    {
+      "title": "Löwenbrauerei Elzach Inhaber: Johannes Dold",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Elzach"
+    },
+    {
+      "title": "Mall-Bräu Michael Mall eK",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Meckesheim"
+    },
+    {
+      "title": "Martinsbräu Freiburg",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Freiburg"
+    },
+    {
+      "title": "Max und Moritz Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "KressbronnBerg"
+    },
+    {
+      "title": "Michaeli Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Sulzfeld "
+    },
+    {
+      "title": "Michelbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsbad"
+    },
+    {
+      "title": "Moninger Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsruhe"
+    },
+    {
+      "title": "Nattheimer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Nattheim"
+    },
+    {
+      "title": "Neckarsulmer Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Neckarsulm"
+    },
+    {
+      "title": "Ochsenbräu Ergenzingen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Rottenburg-Ergenzingen"
+    },
+    {
+      "title": "Palmbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Eppingen"
+    },
+    {
+      "title": "Pflugbrauerei Hörvelsingen",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Langenau-Hörvelsingen"
+    },
+    {
+      "title": "Polsterbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Herrenberg"
+    },
+    {
+      "title": "Privatbrauerei Anton Rieg",
+      "bundesland": "Baden-Württemberg",
+      "ort": "ArgenbühlEisenharz"
+    },
+    {
+      "title": "Privatbrauerei Rogg",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Lenzkirch"
+    },
+    {
+      "title": "Privatbrauerei Wilhelm Ketterer KG",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Pforzheim"
+    },
+    {
+      "title": "Privater Brauereigasthof Adler",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Hundersingen"
+    },
+    {
+      "title": "Rommelmühle",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bietigheim-Bissingen"
+    },
+    {
+      "title": "Rössle Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ehingen"
+    },
+    {
+      "title": "Rothaus Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Grafenhausen Rothaus"
+    },
+    {
+      "title": "Rotochsen Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ellwangen"
+    },
+    {
+      "title": "Ruppaner Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Konstanz"
+    },
+    {
+      "title": "Salzscheuer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Marbach"
+    },
+    {
+      "title": "Schlachthof Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Nürtingen"
+    },
+    {
+      "title": "Schlossbrauerei Stöckle Schmieheim e.K.",
+      "bundesland": "Baden-Württemberg"
+    },
+    {
+      "title": "Schlüssel Brauerei Helmut Bosch",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Giengen"
+    },
+    {
+      "title": "Schnitzer Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Offenburg"
+    },
+    {
+      "title": "Schönbuch Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Böblingen"
+    },
+    {
+      "title": "Schussenrieder Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bad Schussenried"
+    },
+    {
+      "title": "Schwanen Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Bernhausen"
+    },
+    {
+      "title": "Schwetzinger Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schwetzingen"
+    },
+    {
+      "title": "Sophie‘s Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Stuttgart"
+    },
+    {
+      "title": "Speidels BrauManufaktur",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Hohenstein-Ödenwaldstetten"
+    },
+    {
+      "title": "Stuttgarter Hofbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Stuttgart"
+    },
+    {
+      "title": "Sudhaus Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ludwigsburg "
+    },
+    {
+      "title": "Sudhaus Würth",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Schwäbisch Hall"
+    },
+    {
+      "title": "Turm Bräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Freudenstadt"
+    },
+    {
+      "title": "Vogelbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Ettlingen"
+    },
+    {
+      "title": "Walderbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Königseggwald "
+    },
+    {
+      "title": "Waldhaus Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Weilheim (Waldhaus)"
+    },
+    {
+      "title": "Welde Brauhaus",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Plankstadt"
+    },
+    {
+      "title": "Wichtel Feuerbacher",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Stuttgart"
+    },
+    {
+      "title": "Woinemer Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Weinheim"
+    },
+    {
+      "title": "Wolf Brauerei",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Karlsruhe"
+    },
+    {
+      "title": "Zwiefalter Klosterbräu",
+      "bundesland": "Baden-Württemberg",
+      "ort": "Zwiefalten"
+    },
+    {
+      "title": "Äbbelwoi - Schmidt GbR Budecker / Hamacher",
+      "bundesland": "Hessen",
+      "ort": "Wiesbaden"
+    },
+    {
+      "title": "Altes Brauhaus Bad Hersfeld",
+      "bundesland": "Hessen",
+      "ort": "Bad Hersfeld"
+    },
+    {
+      "title": "Bier Hannes",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt am Main"
+    },
+    {
+      "title": "Binding Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt"
+    },
+    {
+      "title": "Brauerei Alsfeld",
+      "bundesland": "Hessen",
+      "ort": "Alsfeld"
+    },
+    {
+      "title": "Brauerei August Helbig KG",
+      "bundesland": "Hessen",
+      "ort": "Weilburg"
+    },
+    {
+      "title": "Brauerei Dörr oHG",
+      "bundesland": "Hessen",
+      "ort": "Michelstadt"
+    },
+    {
+      "title": "Brauerei Fr. Haass KG",
+      "bundesland": "Hessen",
+      "ort": "Schwalmstadt Treysa"
+    },
+    {
+      "title": "Brauereigasthof Bier Hannes",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt"
+    },
+    {
+      "title": "Brauhaus 18-80",
+      "bundesland": "Hessen",
+      "ort": "Fritzlar"
+    },
+    {
+      "title": "Brauhaus Bad Homburg",
+      "bundesland": "Hessen",
+      "ort": "Bad Homburg v.d.H."
+    },
+    {
+      "title": "Brauhaus Fulda",
+      "bundesland": "Hessen",
+      "ort": "Fulda"
+    },
+    {
+      "title": "Brauhaus Obermühle",
+      "bundesland": "Hessen",
+      "ort": "Braunfels"
+    },
+    {
+      "title": "Brauhaus Wiesenmühle",
+      "bundesland": "Hessen",
+      "ort": "Fulda"
+    },
+    {
+      "title": "Brauhaus Wildungen",
+      "bundesland": "Hessen",
+      "ort": "Bad Wildungen"
+    },
+    {
+      "title": "Burggraf Bräu",
+      "bundesland": "Hessen",
+      "ort": "Bensheim "
+    },
+    {
+      "title": "Clausthaler",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt"
+    },
+    {
+      "title": "Darmstädter Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Darmstadt "
+    },
+    {
+      "title": "Edermünder Brauscheune",
+      "bundesland": "Hessen",
+      "ort": "Edermünde"
+    },
+    {
+      "title": "Elisabeth Gasthausbrauerei",
+      "bundesland": "Hessen",
+      "ort": "Marburg"
+    },
+    {
+      "title": "Eschweger Klosterbrauerei",
+      "bundesland": "Hessen",
+      "ort": "Eschwege"
+    },
+    {
+      "title": "Fuldabrücker Landbrauerei GbR",
+      "bundesland": "Hessen",
+      "ort": "Fuldabrueck-Doernhagen"
+    },
+    {
+      "title": "Gasthausbrauerei Alt Giessen",
+      "bundesland": "Hessen",
+      "ort": "Gießen"
+    },
+    {
+      "title": "Gasthofbrauerei Hotel Zur Traube",
+      "bundesland": "Hessen",
+      "ort": "Nidda"
+    },
+    {
+      "title": "Glaabsbräu",
+      "bundesland": "Hessen",
+      "ort": "Seligenstadt"
+    },
+    {
+      "title": "Grohe Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Darmstadt"
+    },
+    {
+      "title": "Heinrich Eidmann",
+      "bundesland": "Hessen",
+      "ort": "Gross Umstadt"
+    },
+    {
+      "title": "Henninger Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt "
+    },
+    {
+      "title": "Herborner Bärenbräu",
+      "bundesland": "Hessen",
+      "ort": "Herborn"
+    },
+    {
+      "title": "Hessisches Löwenbier",
+      "bundesland": "Hessen",
+      "ort": "Baunatal"
+    },
+    {
+      "title": "Hinterländer Brauhaus",
+      "bundesland": "Hessen",
+      "ort": "Breidenbach Wolzhausen"
+    },
+    {
+      "title": "Hochstädter Landbier KG",
+      "bundesland": "Hessen",
+      "ort": "Maintal"
+    },
+    {
+      "title": "Hofbrauhaus Heinrich Brüne",
+      "bundesland": "Hessen",
+      "ort": "Bad Arolsen"
+    },
+    {
+      "title": "Hütt Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Baunatal"
+    },
+    {
+      "title": "Idsteiner Brauhaus",
+      "bundesland": "Hessen",
+      "ort": "Idstein"
+    },
+    {
+      "title": "Kärrners Hausbrauerei Familie Prehler",
+      "bundesland": "Hessen",
+      "ort": "Bad Orb"
+    },
+    {
+      "title": "Kleine Rüsselsheimer Brauhaus Gaststättengesellschaft mbH",
+      "bundesland": "Hessen"
+    },
+    {
+      "title": "Lauterbacher Burgbrauerei",
+      "bundesland": "Hessen",
+      "ort": "Lauterbach"
+    },
+    {
+      "title": "Lautertaler Hausbrauerei",
+      "bundesland": "Hessen",
+      "ort": "Lautertal-Lautern"
+    },
+    {
+      "title": "Licher Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Lich"
+    },
+    {
+      "title": "Martini Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Kassel "
+    },
+    {
+      "title": "Michelsbräu",
+      "bundesland": "Hessen",
+      "ort": "Babenhausen "
+    },
+    {
+      "title": "Oberurseler Brauhaus",
+      "bundesland": "Hessen",
+      "ort": "Oberursel"
+    },
+    {
+      "title": "Pfungstädter Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Pfungstadt"
+    },
+    {
+      "title": "Radeberger Gruppe",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt"
+    },
+    {
+      "title": "Rathausbräu Michelstadt",
+      "bundesland": "Hessen",
+      "ort": "Michelstadt"
+    },
+    {
+      "title": "Schmucker brauerei",
+      "bundesland": "Hessen",
+      "ort": "Mossautal"
+    },
+    {
+      "title": "Schöfferhofer Brauerei",
+      "bundesland": "Hessen",
+      "ort": "Frankfurt"
+    },
+    {
+      "title": "Seligenstädter Brauhaus",
+      "bundesland": "Hessen",
+      "ort": " Seligenstadt"
+    },
+    {
+      "title": "Umstädter Brauhaus",
+      "bundesland": "Hessen",
+      "ort": "Gross-Umstadt"
+    },
+    {
+      "title": "Wäldches Bräu",
+      "bundesland": "Hessen",
+      "ort": "Offenbach "
+    },
+    {
+      "title": "Willinger Brauhaus",
+      "bundesland": "Hessen",
+      "ort": "Willingen"
+    },
+    {
+      "title": "Bärenbräu Ottersheim",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Ottersheim"
+    },
+    {
+      "title": "Bell's WeinRestaurant und BierGarten",
+      "bundesland": "Rheinland-Pfalz"
+    },
+    {
+      "title": "Bellheim Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Bellheim"
+    },
+    {
+      "title": "Bellheimer Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Pirmasens "
+    },
+    {
+      "title": "Bitburger Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Bitburg"
+    },
+    {
+      "title": "Brauerei Bischoff",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Winnweiler"
+    },
+    {
+      "title": "Brauhaus / Restaurant Lauterecken",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Lauterecken"
+    },
+    {
+      "title": "Brauhaus A. Ehrstein",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Hinterweidenthal"
+    },
+    {
+      "title": "Brauhaus Blesius Garten",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Trier"
+    },
+    {
+      "title": "Brauhaus Castel",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Mainz Kastel"
+    },
+    {
+      "title": "Brauhaus Kloster Machern",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Bernkastel Kues"
+    },
+    {
+      "title": "Brauhaus Zils Alwin u. Frank Zils GbR",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Naurath"
+    },
+    {
+      "title": "Brauhaus zur Post",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Frankenthal (Pfalz)"
+    },
+    {
+      "title": "Eisgrub Bräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Mainz"
+    },
+    {
+      "title": "Fohr Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Ransbach Baumbach"
+    },
+    {
+      "title": "Froschbräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Jockgrim"
+    },
+    {
+      "title": "Göcklinger Hausbräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Göcklingen"
+    },
+    {
+      "title": "Hachenburger Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Hachenburg "
+    },
+    {
+      "title": "Hausbrauerei Domhof",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Speyer"
+    },
+    {
+      "title": "hopArt CraftBeer",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": " Hatzenbühl"
+    },
+    {
+      "title": "Kirner Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Kirn"
+    },
+    {
+      "title": "Königsbacher Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Koblenz"
+    },
+    {
+      "title": "Kuchems Brauhaus",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Pirmasens"
+    },
+    {
+      "title": "Lahnsteiner Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Lahnstein"
+    },
+    {
+      "title": "Lauterecker Brauhaus",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Lauterecken"
+    },
+    {
+      "title": "Maximilians Brauwiesen",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Niederlahnstein"
+    },
+    {
+      "title": "Nette Brauerei Weißenthurm",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Weissenthurm"
+    },
+    {
+      "title": "Neustadter Brauhaus -NB-UG",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Neustadt Ws-."
+    },
+    {
+      "title": "Neuwieder Marktbräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Neuwied"
+    },
+    {
+      "title": "Petrusbräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": " Trier"
+    },
+    {
+      "title": "Privatbrauerei Gebr. Mayer",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Oggersheim"
+    },
+    {
+      "title": "Schauferts Brauerei",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Schönborn"
+    },
+    {
+      "title": "Stadtbrauhaus Hagenbach",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Hagenbach"
+    },
+    {
+      "title": "Vulkan Brauerei und Brauhaus",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Mendig"
+    },
+    {
+      "title": "Wentzler Bräu",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Riedelberg"
+    },
+    {
+      "title": "Windesheimer Brauhaus",
+      "bundesland": "Rheinland-Pfalz",
+      "ort": "Windesheim"
+    }
+  ]
+}

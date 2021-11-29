@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/brewery_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:padding="15dp"
+    android:layout_margin="10dp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/breweryRowLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/brewery_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breweries"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/brewery_bundesland"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bundesland"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/brewery_ort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ort"
+            android:textSize="18sp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
