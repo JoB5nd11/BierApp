@@ -28,4 +28,16 @@
         tools:listitem="@layout/beer_cardview" />
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="add"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

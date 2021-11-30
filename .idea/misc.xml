@@ -30,8 +30,18 @@
         <entry key="..\:/Users/flori/AndroidStudioProjects/BeerApp/app/src/main/res/layout/fragment_home.xml" value="0.3759057971014493" />
         <entry key="..\:/Users/flori/AndroidStudioProjects/BeerApp/app/src/main/res/layout/list_breweries.xml" value="0.246875" />
         <entry key="..\:/Users/flori/AndroidStudioProjects/BeerApp/app/src/main/res/menu/bottom_navigation.xml" value="0.45" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/drawable/ic_plus_icon_152556.xml" value="0.45897435897435895" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/activity_add_beer2.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/activity_add_brewery.xml" value="0.2188449848024316" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/activity_addbeer.xml" value="0.2188449848024316" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/activity_addbrewery.xml" value="0.22" />
         <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/activity_main.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/fragment_breweries.xml" value="0.38813405797101447" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/beer_cardview.xml" value="0.2188449848024316" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/brewery_cardview.xml" value="0.2188449848024316" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/fragment_beers.xml" value="0.2188449848024316" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/layout/fragment_breweries.xml" value="0.22" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/menu/sort_beer_menue.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/flori/AndroidStudioProjects/BierApp/app/src/main/res/menu/sort_brewery_menu.xml" value="0.34270833333333334" />
       </map>
     </option>
   </component>
