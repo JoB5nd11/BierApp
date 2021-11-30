@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.LinearLayoutCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -36,6 +39,13 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
         holder.brew_bundesland.setText(brewery.bundesland);
         holder.brew_ort.setText(brewery.ort);
 
+        holder.breweryRowLayout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //TODO
+                Fragment fragment = new BreweryDetailFragment();
+            }
+        });
     }
 
     @Override
@@ -57,13 +67,14 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
 
     public static class TodoViewHolder extends RecyclerView.ViewHolder {
         TextView brew_title, brew_bundesland, brew_ort;
-
+        LinearLayoutCompat breweryRowLayout;
 
         public TodoViewHolder(@NonNull View itemView) {
             super(itemView);
             brew_title = itemView.findViewById(R.id.brewery_name);
             brew_bundesland = itemView.findViewById(R.id.brewery_bundesland);
             brew_ort = itemView.findViewById(R.id.brewery_ort);
+            breweryRowLayout = itemView.findViewById(R.id.breweryRowLayout);
         }
     }
 }
