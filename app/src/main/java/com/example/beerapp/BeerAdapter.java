@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import java.util.List;
 public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder> {
 
     List<Beer> beerList;
+    int ratingMin = 1, ratingMax = 5;
 
     public BeerAdapter(List<Beer> beerList) {
         this.beerList = beerList;
@@ -32,10 +34,11 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
     public void onBindViewHolder(@NonNull TodoViewHolder holder, int position) {
         Context context = holder.itemView.getContext();
         Beer beer = beerList.get(position);
-        holder.brew_title.setText(beer.bier);
-        holder.brew_bundesland.setText(beer.herkunft);
-        holder.brew_ort.setText(beer.bewertung);
-
+        holder.beer_name.setText(beer.bier);
+        holder.beer_origin.setText(beer.herkunft);
+//        holder.beer_rating.setText(beer.bewertung);
+        holder.ratingBar.setStepSize(0.1f);
+        holder.ratingBar.setRating(PercentStringToFloat(beer.bewertung, ratingMin, ratingMax));
     }
 
     @Override
@@ -56,14 +59,34 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
     }
 
     public static class TodoViewHolder extends RecyclerView.ViewHolder {
-        TextView brew_title, brew_bundesland, brew_ort;
+        TextView beer_name, beer_origin;//, beer_rating;
+        RatingBar ratingBar;
 
 
         public TodoViewHolder(@NonNull View itemView) {
             super(itemView);
-            brew_title = itemView.findViewById(R.id.beer_bier);
-            brew_bundesland = itemView.findViewById(R.id.beer_herkunft);
-            brew_ort = itemView.findViewById(R.id.beer_bewertung);
+            beer_name = itemView.findViewById(R.id.beer_name);
+            beer_origin = itemView.findViewById(R.id.beer_origin);
+//            beer_rating = itemView.findViewById(R.id.beer_rating);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
         }
+    }
+
+    private float PercentStringToFloat(String percentString, int min, int max){
+        if(percentString.length() < 1){
+            return 0.0f;
+        }
+
+        float result = 0;
+        StringBuffer sb = new StringBuffer(percentString);
+        //Remove the percent sign
+        sb.deleteCharAt(sb.length() - 1);
+
+        result = Float.parseFloat(sb.toString());
+        result /= 100;
+        result *= max;
+        System.out.println(result);
+
+        return result;
     }
 }
