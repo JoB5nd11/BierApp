@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/beer_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -17,27 +18,20 @@
         android:padding="10dp">
 
         <TextView
+            style="@style/ListTitleText"
             android:id="@+id/beer_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bier"
-            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/beer_origin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Herkunft"
-            android:textSize="18sp" />
-
-<!--        <TextView-->
-<!--            android:id="@+id/beer_rating"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Bewertung"-->
-<!--            android:textSize="18sp" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/beer_rating"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Bewertung"-->
+        <!--            android:textSize="18sp" />-->
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -45,9 +39,30 @@
             android:layout_height="wrap_content"
             android:numStars="5"
             android:stepSize="0.1"
+            android:rating="4.1"
             style="?android:attr/ratingBarStyleSmall"
             />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout">
+
+            <TextView
+                android:id="@+id/beer_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Herkunft"
+                android:textSize="18sp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/beer_origin"-->
+<!--                tools:srcCompat="@tools:sample/backgrounds/scenic" />-->
+        </RelativeLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.cardview.widget.CardView>

@@ -17,4 +17,7 @@
     <color name="blue">#074C97</color>
     <color name="darkblue">#042A54</color>
     <color name="black">#FF000000</color>
+
+    <color name="debug1">#f0f</color>
+    <color name="debug2">#2cc</color>
 </resources>
