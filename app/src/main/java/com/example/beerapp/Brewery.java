@@ -1,14 +1,25 @@
 package com.example.beerapp;
 
 public class Brewery {
-    String title;
-    String bundesland;
-    String ort;
+    private String title;
+    private String bundesland;
+    private String ort;
+    private boolean expandable;
+
 
     public Brewery(String title, String bundesland, String ort) {
         this.title = title;
         this.bundesland = bundesland;
         this.ort = ort;
+        this.expandable = false;
+    }
+
+    public boolean isExpandable(){
+        return expandable;
+    }
+
+    public void setExpandable(boolean expandable){
+        this.expandable = expandable;
     }
 
     public String getTitle() {

@@ -21,8 +21,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -41,11 +43,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Locale;
 
-public class BreweriesFragment extends Fragment {
+public class BreweriesFragment extends Fragment{
 
     private ArrayList<Brewery> breweryList = new ArrayList<>();
     private RecyclerView BreweryRV;
     private BreweryAdapter BreweryAdapter;
+    private GoogleMap mMap;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -124,17 +127,11 @@ public class BreweriesFragment extends Fragment {
 
                 return super.onOptionsItemSelected(item);
         }
-
-
-
     }
-
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-
-
         View view = inflater.inflate(R.layout.fragment_breweries, container, false);
 
         BreweryRV = view.findViewById(R.id.breweryRv);
@@ -276,6 +273,5 @@ public class BreweriesFragment extends Fragment {
                 "  \"mybreweries\": ["+ json + "  ]\n" +
                 "}";
     }
-
 }
 

@@ -1,10 +1,10 @@
 package com.example.beerapp;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,11 +13,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.maps.MapView;
+
 import java.util.List;
 
 public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoViewHolder> {
 
-    List<Brewery> breweryList;
+    static List<Brewery> breweryList;
 
     public BreweryAdapter(List<Brewery> breweryList) {
         this.breweryList = breweryList;
@@ -35,17 +37,12 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
     public void onBindViewHolder(@NonNull TodoViewHolder holder, int position) {
         Context context = holder.itemView.getContext();
         Brewery brewery = breweryList.get(position);
-        holder.brew_title.setText(brewery.title);
-        holder.brew_bundesland.setText(brewery.bundesland);
-        holder.brew_ort.setText(brewery.ort);
+        holder.brew_title.setText(brewery.getTitle());
+        holder.brew_bundesland.setText(brewery.getBundesland());
+        holder.brew_ort.setText(brewery.getOrt());
 
-        holder.breweryRowLayout.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                //TODO
-                Fragment fragment = new BreweryDetailFragment();
-            }
-        });
+        boolean isExpandable = breweryList.get(position).isExpandable();
+        holder.expandableLayout.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -65,9 +62,11 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
         notifyItemRemoved(removePosition);
     }
 
-    public static class TodoViewHolder extends RecyclerView.ViewHolder {
+    public class TodoViewHolder extends RecyclerView.ViewHolder {
         TextView brew_title, brew_bundesland, brew_ort;
         LinearLayoutCompat breweryRowLayout;
+        RelativeLayout expandableLayout;
+        MapView map;
 
         public TodoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,6 +74,19 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
             brew_bundesland = itemView.findViewById(R.id.brewery_bundesland);
             brew_ort = itemView.findViewById(R.id.brewery_ort);
             breweryRowLayout = itemView.findViewById(R.id.breweryRowLayout);
+            expandableLayout = itemView.findViewById(R.id.expandable_layout);
+            map = (MapView) itemView.findViewById(R.id.mapView);
+            map.onCreate(null);
+            map.onResume();
+
+            breweryRowLayout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Brewery brewery = breweryList.get(getAdapterPosition());
+                    brewery.setExpandable(!brewery.isExpandable());
+                    notifyItemChanged(getAdapterPosition());
+                }
+            });
         }
     }
 }
