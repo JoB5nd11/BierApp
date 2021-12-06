@@ -3,7 +3,6 @@ package com.example.beerapp;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,25 +13,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
-import org.sufficientlysecure.htmltextview.HtmlFormatter;
-import org.sufficientlysecure.htmltextview.HtmlFormatterBuilder;
-import org.sufficientlysecure.htmltextview.HtmlHttpImageGetter;
-import org.sufficientlysecure.htmltextview.HtmlTextView;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
 public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoViewHolder> {
 
     static List<Brewery> breweryList;
+    int currentPositionExpanded = -1;
     ImageView mapView;
 
     public BreweryAdapter(List<Brewery> breweryList) {
@@ -59,27 +51,13 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
         holder.expandableLayout.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
 
         if(isExpandable){
-            String strurl = "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
-                    + brewery.getOrt().toLowerCase()
-                    + "&z=8&w=500&h=250";
-            mapView.setImageBitmap(getBitmapFromURL(strurl));
-            System.out.println("Set image");
-        }
-    }
-
-    @Nullable
-    private static Bitmap getBitmapFromURL(String src){
-        try{
-            URL url = new URL(src);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            return myBitmap;
-        }catch(IOException e){
-            e.printStackTrace();
-            return null;
+            brewery.generateMapImage();
+            try{
+                System.out.println("Height: " + brewery.getMapImage().getByteCount());
+                mapView.setImageBitmap(brewery.getMapImage());
+            }catch(NullPointerException e){
+                System.out.println("No Map could be loaded");
+            }
         }
     }
 
@@ -118,6 +96,11 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
             breweryRowLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if(currentPositionExpanded > 0){
+                        breweryList.get(currentPositionExpanded).setExpandable(false);
+                        expandableLayout.setVisibility(View.GONE);
+                    }
+
                     Brewery brewery = breweryList.get(getAdapterPosition());
                     brewery.setExpandable(!brewery.isExpandable());
                     notifyItemChanged(getAdapterPosition());
