@@ -49,14 +49,12 @@
                 android:textSize="18sp"
                 />
 
-            <com.google.android.gms.maps.MapView
+            <ImageView
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
-                android:layout_below="@id/brewery_ort"/>
-
+                android:layout_below="@id/brewery_ort" />
 
         </RelativeLayout>
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.cardview.widget.CardView>

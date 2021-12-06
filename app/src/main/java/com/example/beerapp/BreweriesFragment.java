@@ -21,14 +21,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -43,16 +42,39 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Locale;
 
-public class BreweriesFragment extends Fragment{
+import java.io.IOException;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
+public class BreweriesFragment extends Fragment{
     private ArrayList<Brewery> breweryList = new ArrayList<>();
     private RecyclerView BreweryRV;
     private BreweryAdapter BreweryAdapter;
-    private GoogleMap mMap;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Document document;
+        try {
+            //Get Document object after parsing the html from given url.
+            document = Jsoup.connect("https://www.bing.com/images/search?q=nattheimer+doppelbock").get();
+
+                //Get links from document object.
+                Elements links = document.getElementsByClass("iusc");
+                System.out.println("First: " + links.get(0));
+
+//                //Iterate links and print link attributes.
+//                for (Element link : links) {
+//                    System.out.println("Link: " + link.attr("m"));
+//                }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         setHasOptionsMenu(true);
     }
 
@@ -138,9 +160,6 @@ public class BreweriesFragment extends Fragment{
         initRecyclerView(breweryList);
         fillBreweryist();
 
-
-
-
         EditText editText = view.findViewById(R.id.brewery_search);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -167,8 +186,6 @@ public class BreweriesFragment extends Fragment{
                 openAddBrewery();
             }
         });
-
-
 
         return view;
     }
@@ -222,8 +239,6 @@ public class BreweriesFragment extends Fragment{
         }
 
     }
-
-
 
 
     private void initRecyclerView(ArrayList<Brewery> br)

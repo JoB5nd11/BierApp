@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.beerapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeerApp">
+
         <activity
             android:name=".addBeer2"
             android:exported="false" />
@@ -25,9 +29,4 @@
             </intent-filter>
         </activity>
     </application>
-
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyDi5zDecU9AA1cqZ6rX8sax1xUi0pI1Noo" />
-
 </manifest>

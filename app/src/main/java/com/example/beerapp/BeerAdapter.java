@@ -99,7 +99,6 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                     Beer beer = beerList.get(getAdapterPosition());
                     beer.setExpandable(!beer.isExpandable());
                     notifyItemChanged(getAdapterPosition());
-                    System.out.println(beer.isExpandable());
                 }
             });
         }
@@ -118,7 +117,6 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         result = Float.parseFloat(sb.toString());
         result /= 100;
         result *= max;
-        System.out.println(result);
 
         return result;
     }
