@@ -120,9 +120,6 @@ public class BeerFragment extends Fragment {
             default:
                 return super.onOptionsItemSelected(item);
         }
-
-
-
     }
 
     @Nullable
@@ -159,7 +156,7 @@ public class BeerFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
                 openAddBeer();
             }
         });

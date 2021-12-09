@@ -57,24 +57,6 @@ public class BreweriesFragment extends Fragment{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Document document;
-        try {
-            //Get Document object after parsing the html from given url.
-            document = Jsoup.connect("https://www.bing.com/images/search?q=nattheimer+doppelbock").get();
-
-                //Get links from document object.
-                Elements links = document.getElementsByClass("iusc");
-                System.out.println("First: " + links.get(0));
-
-//                //Iterate links and print link attributes.
-//                for (Element link : links) {
-//                    System.out.println("Link: " + link.attr("m"));
-//                }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         setHasOptionsMenu(true);
     }
 
@@ -182,7 +164,8 @@ public class BreweriesFragment extends Fragment{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
+                //Hää
+//                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
                 openAddBrewery();
             }
         });
@@ -191,7 +174,7 @@ public class BreweriesFragment extends Fragment{
     }
 
     private void openAddBrewery(){
-        Intent intent = new Intent(getContext(),addBrewery.class);
+        Intent intent = new Intent(getContext(), addBrewery.class);
         startActivity(intent);
     }
 

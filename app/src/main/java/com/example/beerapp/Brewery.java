@@ -63,8 +63,12 @@ public class Brewery {
 
     public void generateMapImage(){
         if(this.mapImage == null){
+            String ort_url = this.ort.replace("ä", "ae")
+                                     .replace("ö", "oe")
+                                     .replace("ü", "ue")
+                                     .replace("ß", "ss");
             String strurl = "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
-                    + this.ort.toLowerCase().split(" ")[0]
+                    + ort_url.toLowerCase().split(" ")[0]
                     + "&z=8&w=500&h=250";
             this.mapImage = getBitmapFromURL(strurl);
             System.out.println(strurl);

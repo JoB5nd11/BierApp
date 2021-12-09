@@ -77,6 +77,23 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         notifyItemRemoved(removePosition);
     }
 
+    private float PercentStringToFloat(String percentString, int min, int max){
+        if(percentString.length() < 1){
+            return 0.0f;
+        }
+
+        float result = 0;
+        StringBuffer sb = new StringBuffer(percentString);
+        //Remove the percent sign
+        sb.deleteCharAt(sb.length() - 1);
+
+        result = Float.parseFloat(sb.toString());
+        result /= 100;
+        result *= max;
+
+        return result;
+    }
+
     public class TodoViewHolder extends RecyclerView.ViewHolder {
         TextView beer_name, beer_origin;//, beer_rating;
         RatingBar ratingBar;
@@ -102,22 +119,5 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                 }
             });
         }
-    }
-
-    private float PercentStringToFloat(String percentString, int min, int max){
-        if(percentString.length() < 1){
-            return 0.0f;
-        }
-
-        float result = 0;
-        StringBuffer sb = new StringBuffer(percentString);
-        //Remove the percent sign
-        sb.deleteCharAt(sb.length() - 1);
-
-        result = Float.parseFloat(sb.toString());
-        result /= 100;
-        result *= max;
-
-        return result;
     }
 }
