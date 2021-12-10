@@ -46,8 +46,6 @@
                 android:layout_height="wrap_content"
                 android:scaleType="fitStart"/>
 
-
-
         </androidx.appcompat.widget.LinearLayoutCompat>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

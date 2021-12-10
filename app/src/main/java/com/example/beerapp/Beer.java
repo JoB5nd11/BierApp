@@ -1,12 +1,21 @@
 package com.example.beerapp;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
 import com.google.gson.annotations.SerializedName;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class Beer {
     private String bier;
     private String herkunft;
     private String bewertung;
     private String votes;
+    private Bitmap image;
     private boolean expandable;
 
 
@@ -56,5 +65,13 @@ public class Beer {
 
     public void setVotes(String votes) {
         this.votes = votes;
+    }
+
+    public Bitmap getImage(){
+        return this.image;
+    }
+
+    public void setImage(Bitmap image){
+        this.image = image;
     }
 }

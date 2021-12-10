@@ -6,11 +6,14 @@ import static com.example.beerapp.R.*;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.LayerDrawable;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -23,6 +26,14 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.drawable.IconCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder> {
@@ -55,6 +66,8 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         LayerDrawable stars = (LayerDrawable) holder.ratingBar.getProgressDrawable();
         stars.setTint(ContextCompat.getColor(context, color.orange));
         //stars.setTint(getResources().getColor(R.color.orange));
+
+        holder.beer_image.setImageBitmap(beer.getImage());
 
         boolean isExpandable = beerList.get(position).isExpandable();
         holder.expandableLayout.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
@@ -97,6 +110,7 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
     public class TodoViewHolder extends RecyclerView.ViewHolder {
         TextView beer_name, beer_origin;//, beer_rating;
         RatingBar ratingBar;
+        ImageView beer_image;
         LinearLayoutCompat beerRowLayout;
         RelativeLayout expandableLayout;
 
@@ -107,6 +121,7 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
             beer_origin = itemView.findViewById(id.beer_origin);
 //            beer_rating = itemView.findViewById(R.id.beer_rating);
             ratingBar = itemView.findViewById(R.id.ratingBar);
+            beer_image = itemView.findViewById(id.beer_image);
             beerRowLayout = itemView.findViewById(id.beerRowLayout);
             expandableLayout = itemView.findViewById(id.expandable_layout);
 
@@ -116,8 +131,30 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                     Beer beer = beerList.get(getAdapterPosition());
                     beer.setExpandable(!beer.isExpandable());
                     notifyItemChanged(getAdapterPosition());
+
+                    System.out.println("image gets loaded");
+                    beer.setImage(getBitmapFromURL(
+                            "https://tse1.mm.bing.net/th?q=" +
+                                beer.getBier().replace(" ", "+") +
+                                "&amp;w=42&amp;h=42&amp;c=1&amp;p=0&amp;pid=InlineBlock&amp;mkt=de-DE&amp;cc=DE&amp;setlang=de&amp;adlt=moderate&amp;t=1"
+                    ));
                 }
             });
+        }
+
+        private Bitmap getBitmapFromURL(String src){
+            try{
+                URL url = new URL(src);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap resBitmap = BitmapFactory.decodeStream(input);
+                return resBitmap;
+            }catch(IOException e){
+                e.printStackTrace();
+                return null;
+            }
         }
     }
 }
