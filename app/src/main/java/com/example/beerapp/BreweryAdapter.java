@@ -3,6 +3,7 @@ package com.example.beerapp;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,19 +47,10 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
         holder.brew_title.setText(brewery.getTitle());
         holder.brew_bundesland.setText(brewery.getBundesland());
         holder.brew_ort.setText(brewery.getOrt());
+        holder.brewery_map.setImageBitmap(brewery.getMapImage());
 
         boolean isExpandable = breweryList.get(position).isExpandable();
         holder.expandableLayout.setVisibility(isExpandable ? View.VISIBLE : View.GONE);
-
-        if(isExpandable){
-            brewery.generateMapImage();
-            try{
-                System.out.println("Height: " + brewery.getMapImage().getByteCount());
-                mapView.setImageBitmap(brewery.getMapImage());
-            }catch(NullPointerException e){
-                System.out.println("No Map could be loaded");
-            }
-        }
     }
 
     @Override
@@ -80,6 +72,7 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
 
     public class TodoViewHolder extends RecyclerView.ViewHolder {
         TextView brew_title, brew_bundesland, brew_ort;
+        ImageView brewery_map;
         LinearLayoutCompat breweryRowLayout;
         RelativeLayout expandableLayout;
 
@@ -88,6 +81,7 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
             brew_title = itemView.findViewById(R.id.brewery_name);
             brew_bundesland = itemView.findViewById(R.id.brewery_bundesland);
             brew_ort = itemView.findViewById(R.id.brewery_ort);
+            brewery_map = itemView.findViewById(R.id.mapView);
             breweryRowLayout = itemView.findViewById(R.id.breweryRowLayout);
             expandableLayout = itemView.findViewById(R.id.expandable_layout);
 
@@ -102,10 +96,40 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
                     }
 
                     Brewery brewery = breweryList.get(getAdapterPosition());
+
+                    String ort_url = brewery.getOrt()
+                            .replace("ä", "ae")
+                            .replace("ö", "oe")
+                            .replace("ü", "ue")
+                            .replace("ß", "ss")
+                            .replace("-", "_")
+                            .replace(" ", "_");
+
+                    brewery.setMapImage(getBitmapFromURL(
+                    "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
+                        + ort_url.toLowerCase()
+                        + "&z=8&w=500&h=250"
+                    ));
+
                     brewery.setExpandable(!brewery.isExpandable());
                     notifyItemChanged(getAdapterPosition());
-            }
+                }
             });
+        }
+
+        private Bitmap getBitmapFromURL(String src){
+            try{
+                URL url = new URL(src);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap resBitmap = BitmapFactory.decodeStream(input);
+                return resBitmap;
+            }catch(IOException e){
+                e.printStackTrace();
+                return null;
+            }
         }
     }
 }

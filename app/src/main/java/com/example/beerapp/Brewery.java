@@ -61,34 +61,7 @@ public class Brewery {
         return mapImage;
     }
 
-    public void generateMapImage(){
-        if(this.mapImage == null){
-            String ort_url = this.ort.replace("ä", "ae")
-                                     .replace("ö", "oe")
-                                     .replace("ü", "ue")
-                                     .replace("ß", "ss");
-            String strurl = "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
-                    + ort_url.toLowerCase().split(" ")[0]
-                    + "&z=8&w=500&h=250";
-            this.mapImage = getBitmapFromURL(strurl);
-            System.out.println(strurl);
-        }
-    }
-
-    @Nullable
-    private static Bitmap getBitmapFromURL(String src){
-        try{
-            URL url = new URL(src);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            myBitmap = Bitmap.createScaledBitmap(myBitmap, myBitmap.getWidth(), myBitmap.getHeight(), false);
-            return myBitmap;
-        }catch(IOException e){
-            e.printStackTrace();
-            return null;
-        }
+    public void setMapImage(Bitmap mapImage){
+        this.mapImage = mapImage;
     }
 }
