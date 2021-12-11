@@ -131,11 +131,13 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                     Beer beer = beerList.get(getAdapterPosition());
                     beer.setExpandable(!beer.isExpandable());
                     notifyItemChanged(getAdapterPosition());
-
-                    System.out.println("image gets loaded");
                     beer.setImage(getBitmapFromURL(
                             "https://tse1.mm.bing.net/th?q=" +
-                                beer.getBier().replace(" ", "+") +
+                                beer.getBier().replace(" ", "+")
+                                        .replace("ä", "ae")
+                                        .replace("ö", "oe")
+                                        .replace("ü", "ue")
+                                        .replace("ß", "ss") +
                                 "&amp;w=42&amp;h=42&amp;c=1&amp;p=0&amp;pid=InlineBlock&amp;mkt=de-DE&amp;cc=DE&amp;setlang=de&amp;adlt=moderate&amp;t=1"
                     ));
                 }

@@ -1,5 +1,6 @@
 package com.example.beerapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,6 +11,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -151,6 +154,16 @@ public class BeerFragment extends Fragment {
             }
         });
 
+        Button searchBtn = view.findViewById(R.id.search_button);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.requestFocus();
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+            }
+        });
+
         FloatingActionButton fab = view.findViewById(R.id.add_beer);
         fab.setOnClickListener(new View.OnClickListener() {
 
@@ -160,9 +173,6 @@ public class BeerFragment extends Fragment {
                 openAddBeer();
             }
         });
-
-
-
 
         return view;
     }
@@ -197,8 +207,8 @@ public class BeerFragment extends Fragment {
 
                 JSONObject beerDetail = beerArray.getJSONObject(i);
                 Beer b = new Beer(beerDetail.getString("bier"),beerDetail.optString("herkunft"),beerDetail.optString("bewertung"), beerDetail.optString("votes"));
-
-                beerList.add(b);
+                //i dont want "(dein) B`" in the list ヽ(ಠ_ಠ)ノ
+                if(!b.getBier().contains("`")) beerList.add(b);
             }
 
             JSONObject obj2 = new JSONObject(loadJSONfromFiles("myBeers.json.json"));
@@ -217,9 +227,7 @@ public class BeerFragment extends Fragment {
 
             e.printStackTrace();
         }
-
     }
-
 
     private void initRecyclerView(ArrayList<Beer> be)
     {
@@ -269,7 +277,5 @@ public class BeerFragment extends Fragment {
                 "  \"mybeers\": ["+ json + "  ]\n" +
                 "}";
     }
-
-
 }
 

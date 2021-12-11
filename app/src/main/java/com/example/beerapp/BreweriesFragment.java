@@ -12,6 +12,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -160,6 +162,16 @@ public class BreweriesFragment extends Fragment{
             }
         });
 
+        Button searchBtn = view.findViewById(R.id.search_button);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.requestFocus();
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+            }
+        });
+
         FloatingActionButton fab = view.findViewById(R.id.add_brewery);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -220,7 +232,6 @@ public class BreweriesFragment extends Fragment{
 
             e.printStackTrace();
         }
-
     }
 
 
