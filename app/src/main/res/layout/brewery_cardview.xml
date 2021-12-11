@@ -21,10 +21,10 @@
             android:id="@+id/brewery_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ListTitleText"
             android:text="Breweries"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             />
 
         <RelativeLayout

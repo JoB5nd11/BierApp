@@ -6,10 +6,14 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.BaseInputConnection;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,6 +55,8 @@ public class addDiaryEntry extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 addNewDiaryEntry(editTitle.getText().toString(), editText.getText().toString());
+                Toast.makeText(getBaseContext(),"Added: \n" + editTitle.getText().toString(), Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 
@@ -84,6 +90,7 @@ public class addDiaryEntry extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
+    @Nullable
     private void addNewDiaryEntry(String title, String text){
         try{
             Gson gson = new Gson();
@@ -98,10 +105,9 @@ public class addDiaryEntry extends AppCompatActivity {
             FileOutputStream fos = new FileOutputStream(file, true);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
 
+            System.out.println("New JSON: " + json.toString());
             osw.append(json + "\n");
             osw.close();
-
-            System.out.println("New JSON: \n" + json);
 
         }catch(IOException e){
             e.printStackTrace();
@@ -116,6 +122,10 @@ public class addDiaryEntry extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private String getStringFromBitmap(Bitmap bitmapPicture){
+        if(bitmapPicture == null){
+            return "";
+        }
+
         final int COMPRESSION_QUALITY = 100;
         String encodedImage;
         ByteArrayOutputStream byteArrayBitmapStream = new ByteArrayOutputStream();

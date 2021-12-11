@@ -57,6 +57,16 @@ public class DiaryFragment extends Fragment {
         return view;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public void onResume() {
+        entryList.clear();
+        fillEntryList();
+        initRecyclerView(entryList);
+        diaryRV.scrollToPosition(diaryAdapter.getItemCount() - 1);
+        super.onResume();
+    }
+
     private void initRecyclerView(ArrayList<DiaryEntry> de){
         diaryRV.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
         diaryAdapter = new DiaryAdapter(de);
@@ -70,7 +80,6 @@ public class DiaryFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void fillEntryList(){
-        System.out.println("Fill Entry List:");
         JSONObject obj;
 
         try (BufferedReader br = new BufferedReader(new FileReader(getActivity().getFilesDir().getAbsoluteFile() + "/myDiary.json"))) {
