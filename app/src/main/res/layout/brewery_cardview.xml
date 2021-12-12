@@ -45,7 +45,6 @@
                 android:id="@+id/brewery_ort"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/brewery_bundesland"
                 android:text="Ort"
                 android:textSize="18sp"
                 />

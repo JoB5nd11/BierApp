@@ -1,5 +1,6 @@
 package com.example.beerapp;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -25,7 +27,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
 
 public class HomeFragment extends Fragment {
@@ -48,7 +53,7 @@ public class HomeFragment extends Fragment {
 
     int ratingMax = 5;
 
-
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -87,6 +92,7 @@ public class HomeFragment extends Fragment {
         });
 
         Random random = new Random();
+        random.setSeed(getSeedOfTheDay());
 
         int randomNumberQuote = random.nextInt(quoteList.size());
         quoteOfDay = v.findViewById(R.id.quoteOfDay);
@@ -101,6 +107,22 @@ public class HomeFragment extends Fragment {
         beerOfDayBewertung.setRating(PercentStringToFloat(beerList.get(randomNumberBeer).getBewertung(), ratingMax));
 
         return v;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private int getSeedOfTheDay(){
+        String today = convertCurrentDateToString();
+        today = today.replace(".", "");
+
+        int res = Integer.parseInt(today);
+        return res;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private String convertCurrentDateToString(){
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String res = dtf.format(LocalDateTime.now());
+        return res;
     }
 
     private void fillBeerlist()

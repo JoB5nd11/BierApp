@@ -60,6 +60,7 @@
             <RatingBar
                 android:id="@+id/beerOfDayRatingBar"
                 style="?android:attr/ratingBarStyleSmall"
+                android:color="@color/blue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:numStars="5"
@@ -110,6 +111,8 @@
         android:layout_height="wrap_content"
         android:text="spruch"
         android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         app:layout_constraintBottom_toTopOf="@id/separatorBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,10 +128,6 @@
         app:layout_constraintTop_toBottomOf="@id/quoteOfDay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-
-
-
 
 
 
