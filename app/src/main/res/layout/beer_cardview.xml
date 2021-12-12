@@ -13,6 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/icFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/beerRowLayout"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/beerRowLayout"
             android:layout_width="292dp"
@@ -45,6 +54,7 @@
                 android:rating="4.1"
                 android:stepSize="0.1" />
 
+
             <RelativeLayout
                 android:id="@+id/expandable_layout"
                 android:layout_width="match_parent"
@@ -67,4 +77,8 @@
             </RelativeLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </RelativeLayout>
+
+
+
+
 </androidx.cardview.widget.CardView>
