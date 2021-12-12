@@ -24,8 +24,11 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.drawable.IconCompat;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -34,22 +37,36 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
 import java.util.List;
 
 public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder> {
 
     static List<Beer> beerList;
+    private ArrayList <Beer> favoritesList = new ArrayList<>();
     int ratingMin = 1, ratingMax = 5;
 
-    public BeerAdapter(List<Beer> beerList) {
-        this.beerList = beerList;
+    private SharedViewModel viewModel;
+
+    private OnFavoriteClickListener fListener;
+
+    public interface OnFavoriteClickListener {
+        void OnFavoriteClick(int position);
     }
 
-    @NonNull
-    @Override
+    public void setOnFavoriteClickListener(OnFavoriteClickListener listener) {
+        fListener = listener;
+    }
+
+   /* public BeerAdapter(List<Beer> beerList) {
+        this.beerList = beerList;
+    }*/
+
+    public BeerAdapter(List<Beer> beerList) { this.beerList = beerList;}
+
     public TodoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(layout.beer_cardview, parent, false);
-        TodoViewHolder todoViewHoldervh = new TodoViewHolder(v);
+        TodoViewHolder todoViewHoldervh = new TodoViewHolder(v, fListener);
         return todoViewHoldervh;
     }
 
@@ -59,7 +76,6 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         Beer beer = beerList.get(position);
         holder.beer_name.setText(beer.getBier());
         holder.beer_origin.setText(beer.getHerkunft());
-//        holder.beer_rating.setText(beer.getBewertung());
         holder.ratingBar.setStepSize(0.1f);
         holder.ratingBar.setRating(PercentStringToFloat(beer.getBewertung(), ratingMin, ratingMax));
 
@@ -113,17 +129,29 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         ImageView beer_image;
         LinearLayoutCompat beerRowLayout;
         RelativeLayout expandableLayout;
+        ImageView beer_favorite;
 
 
-        public TodoViewHolder(@NonNull View itemView) {
+        public TodoViewHolder(@NonNull View itemView, final OnFavoriteClickListener listener) {
             super(itemView);
             beer_name = itemView.findViewById(id.beer_name);
             beer_origin = itemView.findViewById(id.beer_origin);
-//            beer_rating = itemView.findViewById(R.id.beer_rating);
             ratingBar = itemView.findViewById(R.id.ratingBar);
             beer_image = itemView.findViewById(id.beer_image);
             beerRowLayout = itemView.findViewById(id.beerRowLayout);
             expandableLayout = itemView.findViewById(id.expandable_layout);
+            beer_favorite = itemView.findViewById(id.icFavorite);
+
+            beer_favorite.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION)
+                            listener.OnFavoriteClick(position);
+                    }
+                }
+            });
 
             beerRowLayout.setOnClickListener(new View.OnClickListener() {
                 @Override

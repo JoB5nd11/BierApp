@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyBeer 5</string>
+    <string name="bier_des_tages">Bier des Tages</string>
+    <string name="weisheit_des_tages">Weisheit des Tages</string>
 </resources>

@@ -19,6 +19,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,13 +43,19 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Locale;
 
+
+
+
 public class BeerFragment extends Fragment {
 
     private ArrayList<Beer> beerList = new ArrayList<>();
+    private ArrayList<Beer> favoritesList = new ArrayList<>();
+
     private RecyclerView beerRV;
     private BeerAdapter BeerAdapter;
     private static final Type DATA_TYPE = new TypeToken<ArrayList<Beer>>(){}.getType();
 
+    private SharedViewModel viewModel;
     private int sortByNameCounter = 0, sortByRatingCounter = 0;
 
     @Override
@@ -146,9 +154,26 @@ public class BeerFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_beers, container, false);
 
+
+        viewModel = ViewModelProviders.of(getActivity()).get(SharedViewModel.class);
+        viewModel.getBeerL().observe(getViewLifecycleOwner(), new Observer<ArrayList<Beer>>() {
+            @Override
+            public void onChanged(ArrayList<Beer> beers) {
+                beerList = beers;
+            }
+        });
+        beerList = viewModel.getBeerL().getValue();
+
+        viewModel.getFavoritesL().observe(getViewLifecycleOwner(), new Observer<ArrayList<Beer>>() {
+            @Override
+            public void onChanged(ArrayList<Beer> beers) {
+                favoritesList = beers;
+            }
+        });
+
+
         beerRV = view.findViewById(R.id.beerRv);
         initRecyclerView(beerList);
-        fillBeerlist();
 
         EditText editText = view.findViewById(R.id.beer_search);
         editText.addTextChangedListener(new TextWatcher() {
@@ -160,7 +185,7 @@ public class BeerFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                filter(s.toString());
+        //        filter(s.toString());
             }
         });
 
@@ -192,9 +217,7 @@ public class BeerFragment extends Fragment {
         startActivity(intent);
     }
 
-
-
-    private void filter(String text){
+   private void filter(String text){
         ArrayList<Beer> filteredList = new ArrayList<>();
 
         for(Beer beer : beerList){
@@ -205,7 +228,7 @@ public class BeerFragment extends Fragment {
         }
     }
 
-    private void fillBeerlist()
+   /* private void fillBeerlist()
     {
 
         try {
@@ -237,16 +260,38 @@ public class BeerFragment extends Fragment {
 
             e.printStackTrace();
         }
-    }
+
+
+    }*/
 
     private void initRecyclerView(ArrayList<Beer> be)
     {
         beerRV.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
         BeerAdapter = new BeerAdapter(be);
         beerRV.setAdapter(BeerAdapter);
+
+        BeerAdapter.setOnFavoriteClickListener(new BeerAdapter.OnFavoriteClickListener() {
+            @Override
+            public void OnFavoriteClick(int position) {
+
+                boolean favorite = false;
+                Beer beer = beerList.get(position);
+                if (favoritesList != null) {
+                    for (int i = 0; i < favoritesList.size(); i++) {
+                        if (favoritesList.get(i).getBier().equals(beer.getBier())) {
+                            favorite = true;
+                            break;
+                        }
+                    }
+                }
+                if (!favorite)
+                favoritesList.add(beer);
+                viewModel.setFavoritesL(favoritesList);
+            }
+        });
     }
 
-    private String loadJSONfromAssets(String fileName) {
+   /* private String loadJSONfromAssets(String fileName) {
 
         String json = null;
         try {
@@ -286,6 +331,6 @@ public class BeerFragment extends Fragment {
         return "{\n" +
                 "  \"mybeers\": ["+ json + "  ]\n" +
                 "}";
-    }
+    }*/
 }
 

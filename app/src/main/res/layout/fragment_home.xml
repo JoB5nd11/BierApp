@@ -1,19 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/beerOfDayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
+        android:text="@string/bier_des_tages"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/beerOfDayCardview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/beerOfDayText"
+        app:layout_constraintBottom_toTopOf="@+id/separatorTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/beerOfDayCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:padding="15dp"
+        android:layout_margin="10dp">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/beerOfDayRowLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/beerOfDayBier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bier"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/beerOfDayHerkunft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Herkunft"
+                android:textSize="18sp"
+                />
+
+            <RatingBar
+                android:id="@+id/beerOfDayRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.1"
+                android:stepSize="0.1" />
+
+            <!-- <TextView
+                 android:id="@+id/beerOfDayBewertung"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Bewertung"
+                 android:textSize="18sp"
+                 /> -->
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separatorTop"
+        android:visibility="visible"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/quoteOfDayText"
+        app:layout_constraintTop_toBottomOf="@id/beerOfDayCardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/quoteOfDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weisheit_des_tages"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/quoteOfDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorTop" />
+
+    <TextView
+        android:id="@+id/quoteOfDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spruch"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/separatorBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quoteOfDayText" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separatorBottom"
+        android:visibility="visible"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/randomBeerCardview"
+        app:layout_constraintTop_toBottomOf="@id/quoteOfDay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/separatorBottom"
+        app:layout_constraintBottom_toTopOf="@+id/randomBeerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/randomBeerCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:visibility="invisible">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/randomBeerRowLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/randomBeerBier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/randomBeerHerkunft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"
+                />
+
+            <RatingBar
+                android:id="@+id/randomBeerRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+
+                android:stepSize="0.1" />
+
+           <!-- <TextView
+                android:id="@+id/randomBeerBewertung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="18sp"
+                /> -->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/randomBeerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zufälliges Bier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/randomBeerCardview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
