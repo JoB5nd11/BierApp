@@ -1,12 +1,6 @@
 {
   "beer":[
     {
-      "bier":"(dein) B`",
-      "herkunft":"Ostheim Rhön",
-      "bewertung":"50%",
-      "votes":"153"
-    },
-    {
       "bier":"1. Dampfbierbrauerei Zwiesel Arber Spezial",
       "herkunft":"Zwiesel",
       "bewertung":"51%"

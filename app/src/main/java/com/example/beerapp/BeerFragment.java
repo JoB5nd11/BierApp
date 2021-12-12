@@ -44,8 +44,6 @@ import java.util.Comparator;
 import java.util.Locale;
 
 
-
-
 public class BeerFragment extends Fragment {
 
     private ArrayList<Beer> beerList = new ArrayList<>();
@@ -185,7 +183,7 @@ public class BeerFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-        //        filter(s.toString());
+                filter(s.toString());
             }
         });
 
@@ -228,42 +226,6 @@ public class BeerFragment extends Fragment {
         }
     }
 
-   /* private void fillBeerlist()
-    {
-
-        try {
-
-            JSONObject obj1 = new JSONObject(loadJSONfromAssets("beers.json"));
-            JSONArray beerArray = obj1.getJSONArray("beer");
-
-            for (int i = 0; i < beerArray.length(); i++) {
-
-                JSONObject beerDetail = beerArray.getJSONObject(i);
-                Beer b = new Beer(beerDetail.getString("bier"),beerDetail.optString("herkunft"),beerDetail.optString("bewertung"), beerDetail.optString("votes"));
-                //i dont want "(dein) B`" in the list ヽ(ಠ_ಠ)ノ
-                if(!b.getBier().contains("`")) beerList.add(b);
-            }
-
-            JSONObject obj2 = new JSONObject(loadJSONfromFiles("myBeers.json.json"));
-            JSONArray beerArray2 = obj2.getJSONArray("mybeers");
-
-
-            for (int i = 0; i < beerArray2.length(); i++) {
-                JSONObject beerDetail2= beerArray2.getJSONObject(i);
-
-                Beer b = new Beer(beerDetail2.getString("bier"),beerDetail2.optString("herkunft"),beerDetail2.optString("bewertung"),beerDetail2.optString("votes") );
-                beerList.add(b);
-
-            }
-
-        } catch (JSONException e) {
-
-            e.printStackTrace();
-        }
-
-
-    }*/
-
     private void initRecyclerView(ArrayList<Beer> be)
     {
         beerRV.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
@@ -290,47 +252,5 @@ public class BeerFragment extends Fragment {
             }
         });
     }
-
-   /* private String loadJSONfromAssets(String fileName) {
-
-        String json = null;
-        try {
-            InputStream is = getActivity().getAssets().open(fileName);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
-    }
-
-    private String loadJSONfromFiles(String fileName) {
-
-        String json = null;
-        try {
-            File file = new File(getContext().getFilesDir().getAbsolutePath(),"myBeers.json");
-            if(file.exists()){
-                FileInputStream is = new FileInputStream(file);
-                int size = is.available();
-                byte[] buffer = new byte[size];
-                is.read(buffer);
-                is.close();
-                json = new String(buffer, "UTF-8");
-            }else{
-
-            }
-
-        } catch (IOException ex ) {
-            ex.printStackTrace();
-            return null;
-        }
-        return "{\n" +
-                "  \"mybeers\": ["+ json + "  ]\n" +
-                "}";
-    }*/
 }
 

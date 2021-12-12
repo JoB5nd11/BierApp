@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.core.content.ContextCompat;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -50,8 +51,6 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Todo
 
         LayerDrawable stars = (LayerDrawable) holder.ratingBar.getProgressDrawable();
         stars.setTint(ContextCompat.getColor(context, R.color.orange));
-
-
     }
 
     @Override

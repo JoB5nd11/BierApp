@@ -28,6 +28,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 import java.util.ArrayList;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -42,13 +44,14 @@ import java.util.List;
 
 public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder> {
 
-    static List<Beer> beerList;
-    private ArrayList <Beer> favoritesList = new ArrayList<>();
+    private List<Beer> beerList;
+    static List<Beer> favoritesList;
+//    private ArrayList <Beer> favoritesList = new ArrayList<>();
     int ratingMin = 1, ratingMax = 5;
 
     private SharedViewModel viewModel;
-
     private OnFavoriteClickListener fListener;
+    private LottieAnimationView lav;
 
     public interface OnFavoriteClickListener {
         void OnFavoriteClick(int position);
@@ -57,10 +60,6 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
     public void setOnFavoriteClickListener(OnFavoriteClickListener listener) {
         fListener = listener;
     }
-
-   /* public BeerAdapter(List<Beer> beerList) {
-        this.beerList = beerList;
-    }*/
 
     public BeerAdapter(List<Beer> beerList) { this.beerList = beerList;}
 
@@ -129,7 +128,7 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
         ImageView beer_image;
         LinearLayoutCompat beerRowLayout;
         RelativeLayout expandableLayout;
-        ImageView beer_favorite;
+        LottieAnimationView beer_favorite;
 
 
         public TodoViewHolder(@NonNull View itemView, final OnFavoriteClickListener listener) {
@@ -146,6 +145,14 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                 @Override
                 public void onClick(View v) {
                     if (listener != null) {
+                        System.out.println(beer_favorite.getProgress());
+                        if(beer_favorite.getProgress() > 0.5f){
+                            beer_favorite.setMaxProgress(0.0f);
+                        }else{
+                            beer_favorite.setMaxProgress(1.0f);
+                        }
+                        beer_favorite.playAnimation();
+
                         int position = getAdapterPosition();
                         if (position != RecyclerView.NO_POSITION)
                             listener.OnFavoriteClick(position);

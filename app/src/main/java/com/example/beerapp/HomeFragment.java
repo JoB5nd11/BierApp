@@ -51,6 +51,7 @@ public class HomeFragment extends Fragment {
     private RatingBar randomBeerBewertung;
     private Button randomBeerButton;
 
+
     int ratingMax = 5;
 
     @RequiresApi(api = Build.VERSION_CODES.O)

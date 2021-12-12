@@ -16,6 +16,7 @@ public class Beer {
     private String bewertung;
     private String votes;
     private Bitmap image;
+    private boolean isLiked;
     private boolean expandable;
 
 
@@ -24,6 +25,7 @@ public class Beer {
         this.herkunft = herkunft;
         this.bewertung = bewertung;
         this.votes = votes;
+
         this.expandable = false;
     }
 
@@ -73,5 +75,13 @@ public class Beer {
 
     public void setImage(Bitmap image){
         this.image = image;
+    }
+
+    public boolean isLiked(){
+        return this.isLiked;
+    }
+
+    public void changeLike(){
+        this.isLiked = !this.isLiked;
     }
 }
