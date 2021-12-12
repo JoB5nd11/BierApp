@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diary_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:padding="15dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/diaryRowLayout"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/diary_title"
+                style="@style/ListTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/diary_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01.01.1970" />
+
+            <TextView
+                android:id="@+id/diary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text Text Text" />
+
+            <ImageView
+                android:id="@+id/diary_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

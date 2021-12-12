@@ -27,18 +27,19 @@
             android:textColor="@color/black"
             />
 
+
+        <TextView
+            android:id="@+id/brewery_bundesland"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bundesland"
+            android:textSize="18sp"
+            />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/expandable_layout">
-
-            <TextView
-                android:id="@+id/brewery_bundesland"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bundesland"
-                android:textSize="18sp"
-                />
 
             <TextView
                 android:id="@+id/brewery_ort"

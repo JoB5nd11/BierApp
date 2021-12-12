@@ -12,6 +12,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -53,27 +55,11 @@ public class BreweriesFragment extends Fragment{
     private RecyclerView BreweryRV;
     private BreweryAdapter BreweryAdapter;
 
+    private int sortByNameCounter = 0, sortByStateCounter = 0;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Document document;
-        try {
-            //Get Document object after parsing the html from given url.
-            document = Jsoup.connect("https://www.bing.com/images/search?q=nattheimer+doppelbock").get();
-
-                //Get links from document object.
-                Elements links = document.getElementsByClass("iusc");
-                System.out.println("First: " + links.get(0));
-
-//                //Iterate links and print link attributes.
-//                for (Element link : links) {
-//                    System.out.println("Link: " + link.attr("m"));
-//                }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         setHasOptionsMenu(true);
     }
@@ -92,63 +78,73 @@ public class BreweriesFragment extends Fragment{
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch(item.getItemId()){
-            case R.id.sort_brewery1:
-
-                Comparator<Brewery> breweryComparatorByName = new Comparator<Brewery>() {
-                    @Override
-                    public int compare(Brewery b1, Brewery b2) {
-                        return b1.getTitle().toLowerCase(Locale.ROOT).compareTo(b2.getTitle().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(breweryList, breweryComparatorByName);
-                BreweryAdapter.notifyDataSetChanged();
-
-                return true;
-            case R.id.sort_brewery2:
-
-                Comparator<Brewery> breweryComparatorByName1 = new Comparator<Brewery>() {
-                    @Override
-                    public int compare(Brewery b1, Brewery b2) {
-                        return b2.getTitle().toLowerCase(Locale.ROOT).compareTo(b1.getTitle().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(breweryList, breweryComparatorByName1);
-                BreweryAdapter.notifyDataSetChanged();
-
-
-                return true;
-
-            case R.id.sort_brewery3:
-
-                Comparator<Brewery> breweryComparatorByName2 = new Comparator<Brewery>() {
-                    @Override
-                    public int compare(Brewery b1, Brewery b2) {
-                        return b1.getBundesland().toLowerCase(Locale.ROOT).compareTo(b2.getBundesland().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(breweryList, breweryComparatorByName2);
-                BreweryAdapter.notifyDataSetChanged();
-
-                return true;
-
-            case R.id.sort_brewery4:
-
-
-            Comparator<Brewery> breweryComparatorByName3 = new Comparator<Brewery>() {
-                @Override
-                public int compare(Brewery b2, Brewery b1) {
-                    return b1.getBundesland().toLowerCase(Locale.ROOT).compareTo(b2.getBundesland().toLowerCase(Locale.ROOT));
+            case R.id.sortByNameMenu:
+                if(sortByNameCounter == 0){
+                    sortFromAToZ();
+                    sortByNameCounter++;
+                }else{
+                    sortFromZToA();
+                    sortByNameCounter--;
                 }
-            };
-            Collections.sort(breweryList, breweryComparatorByName3);
-            BreweryAdapter.notifyDataSetChanged();
+                return true;
 
-            return true;
+            case R.id.sortByStateMenu:
+                if(sortByStateCounter == 0){
+                    sortStateAToZ();
+                    sortByStateCounter++;
+                }else{
+                    sortStateZToA();
+                    sortByStateCounter--;
+                }
+                return true;
 
             default:
-
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void sortFromAToZ(){
+        Comparator<Brewery> breweryComparatorByName = new Comparator<Brewery>() {
+            @Override
+            public int compare(Brewery b1, Brewery b2) {
+                return b1.getTitle().toLowerCase(Locale.ROOT).compareTo(b2.getTitle().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(breweryList, breweryComparatorByName);
+        BreweryAdapter.notifyDataSetChanged();
+    }
+
+    private void sortFromZToA(){
+        Comparator<Brewery> breweryComparatorByName1 = new Comparator<Brewery>() {
+            @Override
+            public int compare(Brewery b1, Brewery b2) {
+                return b2.getTitle().toLowerCase(Locale.ROOT).compareTo(b1.getTitle().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(breweryList, breweryComparatorByName1);
+        BreweryAdapter.notifyDataSetChanged();
+    }
+
+    private void sortStateAToZ(){
+        Comparator<Brewery> breweryComparatorByName2 = new Comparator<Brewery>() {
+            @Override
+            public int compare(Brewery b1, Brewery b2) {
+                return b1.getBundesland().toLowerCase(Locale.ROOT).compareTo(b2.getBundesland().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(breweryList, breweryComparatorByName2);
+        BreweryAdapter.notifyDataSetChanged();
+    }
+
+    private void sortStateZToA(){
+        Comparator<Brewery> breweryComparatorByName3 = new Comparator<Brewery>() {
+            @Override
+            public int compare(Brewery b2, Brewery b1) {
+                return b1.getBundesland().toLowerCase(Locale.ROOT).compareTo(b2.getBundesland().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(breweryList, breweryComparatorByName3);
+        BreweryAdapter.notifyDataSetChanged();
     }
 
     @Nullable
@@ -178,11 +174,22 @@ public class BreweriesFragment extends Fragment{
             }
         });
 
+        Button searchBtn = view.findViewById(R.id.search_button);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.requestFocus();
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+            }
+        });
+
         FloatingActionButton fab = view.findViewById(R.id.add_brewery);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
+                //Hää
+//                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
                 openAddBrewery();
             }
         });
@@ -191,7 +198,7 @@ public class BreweriesFragment extends Fragment{
     }
 
     private void openAddBrewery(){
-        Intent intent = new Intent(getContext(),addBrewery.class);
+        Intent intent = new Intent(getContext(), addBrewery.class);
         startActivity(intent);
     }
 
@@ -237,7 +244,6 @@ public class BreweriesFragment extends Fragment{
 
             e.printStackTrace();
         }
-
     }
 
 

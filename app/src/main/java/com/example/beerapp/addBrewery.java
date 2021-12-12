@@ -32,7 +32,10 @@ public class addBrewery extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(),"Added: "+et1.getText().toString() +""+ et2.getText().toString() +""+ et3.getText().toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"Added: \n"
+                                                     + et1.getText().toString() + "\n"
+                                                     + et2.getText().toString() + "\n"
+                                                     + et3.getText().toString(), Toast.LENGTH_SHORT).show();
                 addBrewery(et1.getText().toString(), et2.getText().toString(), et3.getText().toString());
             }
         });

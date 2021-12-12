@@ -11,6 +11,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -54,6 +56,7 @@ public class BeerFragment extends Fragment {
     private static final Type DATA_TYPE = new TypeToken<ArrayList<Beer>>(){}.getType();
 
     private SharedViewModel viewModel;
+    private int sortByNameCounter = 0, sortByRatingCounter = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,64 +78,73 @@ public class BeerFragment extends Fragment {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch(item.getItemId()){
-            case R.id.sort_beer1:
-
-                Comparator<Beer> beerComparatorByName = new Comparator<Beer>() {
-                    @Override
-                    public int compare(Beer b1, Beer b2) {
-                        return b1.getBier().toLowerCase(Locale.ROOT).compareTo(b2.getBier().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(beerList, beerComparatorByName);
-                BeerAdapter.notifyDataSetChanged();
-
+            case R.id.sortByNameMenu:
+                if(sortByNameCounter == 0){
+                    sortFromAToZ();
+                    sortByNameCounter++;
+                }else{
+                    sortFromZtoA();
+                    sortByNameCounter--;
+                }
                 return true;
-            case R.id.sort_beer2:
 
-                Comparator<Beer> beerComparatorByName1 = new Comparator<Beer>() {
-                    @Override
-                    public int compare(Beer b1, Beer b2) {
-                        return b2.getBier().toLowerCase(Locale.ROOT).compareTo(b1.getBier().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(beerList, beerComparatorByName1);
-                BeerAdapter.notifyDataSetChanged();
-
-
-                return true;
-            case R.id.sort_beer3:
-
-                Comparator<Beer> beerComparatorByName3 = new Comparator<Beer>() {
-                    @Override
-                    public int compare(Beer b1, Beer b2) {
-                        return b1.getBewertung().toLowerCase(Locale.ROOT).compareTo(b2.getBewertung().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(beerList, beerComparatorByName3);
-                BeerAdapter.notifyDataSetChanged();
-
-
-                return true;
-            case R.id.sort_beer4:
-
-                Comparator<Beer> beerComparatorByName4 = new Comparator<Beer>() {
-                    @Override
-                    public int compare(Beer b1, Beer b2) {
-                        return b2.getBewertung().toLowerCase(Locale.ROOT).compareTo(b1.getBewertung().toLowerCase(Locale.ROOT));
-                    }
-                };
-                Collections.sort(beerList, beerComparatorByName4);
-                BeerAdapter.notifyDataSetChanged();
-
-
+            case R.id.sortByRatingMenu:
+                if(sortByRatingCounter == 0){
+                    sortFromHighToLow();
+                    sortByRatingCounter++;
+                }else{
+                    sortFromLowToHigh();
+                    sortByRatingCounter--;
+                }
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
 
+    private void sortFromAToZ(){
+        Comparator<Beer> beerComparatorByName = new Comparator<Beer>() {
+            @Override
+            public int compare(Beer b1, Beer b2) {
+                return b1.getBier().toLowerCase(Locale.ROOT).compareTo(b2.getBier().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(beerList, beerComparatorByName);
+        BeerAdapter.notifyDataSetChanged();
+    }
 
+    private void sortFromZtoA(){
+        Comparator<Beer> beerComparatorByName1 = new Comparator<Beer>() {
+            @Override
+            public int compare(Beer b1, Beer b2) {
+                return b2.getBier().toLowerCase(Locale.ROOT).compareTo(b1.getBier().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(beerList, beerComparatorByName1);
+        BeerAdapter.notifyDataSetChanged();
+    }
 
+    private void sortFromHighToLow(){
+        Comparator<Beer> beerComparatorByName4 = new Comparator<Beer>() {
+            @Override
+            public int compare(Beer b1, Beer b2) {
+                return b2.getBewertung().toLowerCase(Locale.ROOT).compareTo(b1.getBewertung().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(beerList, beerComparatorByName4);
+        BeerAdapter.notifyDataSetChanged();
+    }
+
+    private void sortFromLowToHigh(){
+        Comparator<Beer> beerComparatorByName3 = new Comparator<Beer>() {
+            @Override
+            public int compare(Beer b1, Beer b2) {
+                return b1.getBewertung().toLowerCase(Locale.ROOT).compareTo(b2.getBewertung().toLowerCase(Locale.ROOT));
+            }
+        };
+        Collections.sort(beerList, beerComparatorByName3);
+        BeerAdapter.notifyDataSetChanged();
     }
 
     @Nullable
@@ -166,18 +178,24 @@ public class BeerFragment extends Fragment {
         EditText editText = view.findViewById(R.id.beer_search);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
 
             @Override
             public void afterTextChanged(Editable s) {
         //        filter(s.toString());
+            }
+        });
+
+        Button searchBtn = view.findViewById(R.id.search_button);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText.requestFocus();
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
             }
         });
 
@@ -186,13 +204,10 @@ public class BeerFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Test",Toast.LENGTH_SHORT).show();
                 openAddBeer();
             }
         });
-
-
-
 
         return view;
     }
@@ -225,8 +240,8 @@ public class BeerFragment extends Fragment {
 
                 JSONObject beerDetail = beerArray.getJSONObject(i);
                 Beer b = new Beer(beerDetail.getString("bier"),beerDetail.optString("herkunft"),beerDetail.optString("bewertung"), beerDetail.optString("votes"));
-
-                beerList.add(b);
+                //i dont want "(dein) B`" in the list ヽ(ಠ_ಠ)ノ
+                if(!b.getBier().contains("`")) beerList.add(b);
             }
 
             JSONObject obj2 = new JSONObject(loadJSONfromFiles("myBeers.json.json"));
@@ -246,8 +261,8 @@ public class BeerFragment extends Fragment {
             e.printStackTrace();
         }
 
-    }*/
 
+    }*/
 
     private void initRecyclerView(ArrayList<Beer> be)
     {
@@ -317,7 +332,5 @@ public class BeerFragment extends Fragment {
                 "  \"mybeers\": ["+ json + "  ]\n" +
                 "}";
     }*/
-
-
 }
 
