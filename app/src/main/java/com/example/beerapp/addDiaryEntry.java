@@ -100,12 +100,9 @@ public class addDiaryEntry extends AppCompatActivity {
             json += ",\"image\":\"" + getStringFromBitmap(this.diaryImage) + "\"}";
 
             File file = new File(getBaseContext().getFilesDir().getAbsoluteFile(), "myDiary.json");
-            //nur zum Aufräumen des Diary weil man halt nix löschen kann xD
-//            FileOutputStream fos = new FileOutputStream(file, false);
             FileOutputStream fos = new FileOutputStream(file, true);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
 
-            System.out.println("New JSON: " + json.toString());
             osw.append(json + "\n");
             osw.close();
 

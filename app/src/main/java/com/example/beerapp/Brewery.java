@@ -22,6 +22,7 @@ public class Brewery {
         this.title = title;
         this.bundesland = bundesland;
         this.ort = ort;
+        
         this.expandable = false;
     }
 

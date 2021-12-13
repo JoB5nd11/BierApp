@@ -58,18 +58,6 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Todo
         return favoritesList.size();
     }
 
-    public void addTodo(Beer todo) {
-        favoritesList.add(todo);
-        notifyItemInserted(favoritesList.size()-1);
-    }
-
-    public void removeItem(RecyclerView.ViewHolder viewHolder)
-    {
-        int removePosition = viewHolder.getAdapterPosition();
-        favoritesList.remove(removePosition);
-        notifyItemRemoved(removePosition);
-    }
-
     public class TodoViewHolder extends RecyclerView.ViewHolder {
 
         TextView beer_name, beer_origin;//, beer_rating;
@@ -90,20 +78,20 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Todo
         }
     }
 
-                private float PercentStringToFloat(String percentString, int max){
-                    if(percentString.length() < 1){
-                        return 0.0f;
-                    }
+    private float PercentStringToFloat(String percentString, int max){
+        if(percentString.length() < 1){
+            return 0.0f;
+        }
 
-                    float result = 0;
-                    StringBuffer sb = new StringBuffer(percentString);
-                    //Remove the percent sign
-                    sb.deleteCharAt(sb.length() - 1);
+        float result = 0;
+        StringBuffer sb = new StringBuffer(percentString);
+        //Remove the percent sign
+        sb.deleteCharAt(sb.length() - 1);
 
-                    result = Float.parseFloat(sb.toString());
-                    result /= 100;
-                    result *= max;
+        result = Float.parseFloat(sb.toString());
+        result /= 100;
+        result *= max;
 
-                    return result;
-                }
+        return result;
+    }
 }

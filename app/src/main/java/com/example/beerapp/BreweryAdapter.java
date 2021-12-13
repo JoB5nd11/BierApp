@@ -106,7 +106,8 @@ public class BreweryAdapter extends RecyclerView.Adapter<BreweryAdapter.TodoView
                             .replace(" ", "_");
 
                     brewery.setMapImage(getBitmapFromURL(
-                    "https://image.maps.ls.hereapi.com/mia/1.6/mapview?apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
+                    "https://image.maps.ls.hereapi.com/mia/1.6/mapview?"
+                        + "apiKey=IYMkJ8JlwzgsI6Q-dDvpgmvmrDBX6Ll3Wv_h18WEX6Q&co=germany&ci="
                         + ort_url.toLowerCase()
                         + "&z=8&w=500&h=250"
                     ));

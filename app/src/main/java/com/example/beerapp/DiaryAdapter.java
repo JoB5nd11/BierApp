@@ -50,13 +50,6 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.TodoViewHold
         notifyItemInserted(entryList.size() - 1);
     }
 
-    public void removeItem(RecyclerView.ViewHolder viewHolder){
-        int removePosition = viewHolder.getAdapterPosition();
-        entryList.remove(removePosition);
-        notifyItemRemoved(removePosition);
-    }
-
-
     public class TodoViewHolder extends RecyclerView.ViewHolder{
         TextView diaryTitle, diaryDate, diaryText;
         ImageView diaryImage;

@@ -173,7 +173,9 @@ public class BeerAdapter extends RecyclerView.Adapter<BeerAdapter.TodoViewHolder
                                         .replace("ö", "oe")
                                         .replace("ü", "ue")
                                         .replace("ß", "ss") +
-                                "&amp;w=42&amp;h=42&amp;c=1&amp;p=0&amp;pid=InlineBlock&amp;mkt=de-DE&amp;cc=DE&amp;setlang=de&amp;adlt=moderate&amp;t=1"
+                                "&amp;w=42&amp;h=42&amp;c=1&amp;p=0&amp; +" +
+                                "pid=InlineBlock&amp;mkt=de-DE&amp;cc=DE&amp;setlang=de&amp;" +
+                                "adlt=moderate&amp;t=1"
                     ));
                 }
             });
