@@ -9,7 +9,6 @@ import java.util.ArrayList;
 public class SharedViewModel extends ViewModel {
     private MutableLiveData <ArrayList <Beer>> beerL = new MutableLiveData<>();
     private MutableLiveData <ArrayList <Beer>> favoritesL = new MutableLiveData<>();
-    private MutableLiveData <Beer> beerOfDay = new MutableLiveData<>();
 
     public void setFavoritesL(ArrayList <Beer> fL) {
         favoritesL.setValue(fL);
@@ -27,9 +26,4 @@ public class SharedViewModel extends ViewModel {
         return beerL;
     }
 
-    public void setBeer(Beer beer) { beerOfDay.setValue(beer); }
-
-    public LiveData <Beer> getBeer() {
-        return beerOfDay;
-    }
 }

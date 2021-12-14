@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bier_des_tages"
+        style="@style/ListTitleText"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/beerOfDayCardview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,9 +44,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bier"
+                style="@style/ListTitleText"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
                 />
 
             <TextView
@@ -54,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Herkunft"
+                style="@style/ListTitleText"
                 android:textSize="18sp"
                 />
 
@@ -85,7 +86,7 @@
         android:layout_height="0.2dp"
         android:id="@+id/separatorTop"
         android:visibility="visible"
-        android:background="@android:color/black"
+        style="@style/separator"
         app:layout_constraintBottom_toTopOf="@+id/quoteOfDayText"
         app:layout_constraintTop_toBottomOf="@id/beerOfDayCardview"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,9 +96,9 @@
     <TextView
         android:id="@+id/quoteOfDayText"
         android:layout_width="wrap_content"
+        style="@style/ListTitleText"
         android:layout_height="wrap_content"
         android:text="@string/weisheit_des_tages"
-        android:textColor="@android:color/black"
         android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/quoteOfDay"
@@ -110,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="spruch"
+        style="@style/ListTitleText"
         android:textSize="20sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -123,7 +125,7 @@
         android:layout_height="0.2dp"
         android:id="@+id/separatorBottom"
         android:visibility="visible"
-        android:background="@android:color/black"
+        style="@style/separator"
         app:layout_constraintBottom_toTopOf="@+id/randomBeerCardview"
         app:layout_constraintTop_toBottomOf="@id/quoteOfDay"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,14 +161,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                style="@style/ListTitleText"
                 />
 
             <TextView
                 android:id="@+id/randomBeerHerkunft"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                style="@style/ListTitleText"
                 android:textSize="18sp"
                 />
 
